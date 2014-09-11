@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BlogFrontend</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/blog-frontend.css">
+  </head>
+  <body>
+    <script>
+      window.BlogFrontendENV = {{ENV}};
+      window.EmberENV = window.BlogFrontendENV.EmberENV;
+      window.ENV = window.ENV || {};
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/blog-frontend.js"></script>
+    <script>
+      window.BlogFrontend = require('blog-frontend/app')['default'].create(BlogFrontendENV.APP);
+    </script>
+  </body>
+</html>

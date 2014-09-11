@@ -1,0 +1,20 @@
+<h1>Create {{fullName}}</h1>
+
+<form>
+  <fieldset>
+    <div>
+      <label {{bind-attr for="email.elementId"}}>Email</label>
+      {{view Ember.TextField valueBinding='fields.email' name='email' viewName='email'}}
+    </div>
+    <div>
+      <label {{bind-attr for="password.elementId"}}>Password</label>
+      {{view Ember.TextField valueBinding='fields.password' name='password' viewName='password'}}
+    </div>
+    <div>
+      <label {{bind-attr for="passwordConfirmation.elementId"}}>Password Confirmation</label>
+      {{view Ember.TextField valueBinding='fields.passwordConfirmation' name='password_confirmation' viewName='passwordConfirmation'}}
+    </div>
+    <a href='#' {{action createUser}} class='btn btn-success'>Create</a>
+  </fieldset>
+</form>
+

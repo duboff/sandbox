@@ -1,0 +1,14 @@
+<h2 id='title'>Linl</h2>
+{{#if session.isAuthenticated}}
+  <button {{ action 'invalidateSession'}}>Logout</button>
+{{else}}
+  {{link-to 'Login' 'login'}}
+{{/if}}
+
+<ul>
+  <li>{{link-to 'Home' 'index'}}</li>
+  <li>{{link-to 'Protected' 'protected'}}</li>
+</ul>
+
+
+{{outlet}}

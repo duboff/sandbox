@@ -1,0 +1,20 @@
+<h1>Current Users</h1>
+<table class='table'>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Last Seen</th>
+      <th>Number of Posts</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each user in controller}}
+      <tr>
+        <td>{{#link-to 'user' user}}{{user.email}}{{/link-to}}</td>
+        <td>{{user.updatedAt}}</td>
+        <td>{{user.posts.length}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+{{log session.currentUser}}
