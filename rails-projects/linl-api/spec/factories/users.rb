@@ -1,4 +1,4 @@
-# Read about factories at https://github.com/thoughtbot/factory_girl
+require 'faker'
 
 FactoryGirl.define do
   factory :user do |u|
@@ -7,8 +7,6 @@ FactoryGirl.define do
     email { Faker::Internet.email }
     password { Faker::Internet.password(8, 30) }
     password_confirmation { |u| u.password }
-=begin
-    remember_token { Faker::Internet.password(8) }
     birthdate { rand(100.year.ago..Time.now).to_datetime }
     marital_status { User::MARITAL_STATUSES.sample }
     state { User::STATES.keys.sample }
@@ -21,9 +19,17 @@ FactoryGirl.define do
     end
 
     before(:create) do |u|
-      u.ss_monthly_benefit_cents { u.ss_currently_collecting ? rand(5000000)/12 : 0 }
+      u.ss_monthly_benefits_cents { u.ss_currently_collecting ? rand(5000000)/12 : 0 }
     end
-=end
 
+    after(:create) do |u|
+        FactoryGirl.create(:partner, user_id: u.id)
+        rand(2).times do 
+          FactoryGirl.create(:residence, user_id: u.id)
+        end
+      rand(3).times do 
+        FactoryGirl.create(:child, user_id: u.id)
+      end
+    end
   end
 end

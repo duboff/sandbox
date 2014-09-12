@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140910191242) do
+ActiveRecord::Schema.define(version: 20140912133942) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,13 +49,56 @@ ActiveRecord::Schema.define(version: 20140910191242) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
+  create_table "children", force: true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.datetime "birthdate"
+    t.integer  "expected_tuition_cents", limit: 8
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "children", ["user_id"], name: "index_children_on_user_id", using: :btree
+
+  create_table "partners", force: true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.datetime "birthdate"
+    t.boolean  "marital_status"
+    t.string   "state"
+    t.boolean  "ss_currently_collecting"
+    t.integer  "ss_monthly_benefits_cents", limit: 8
+    t.integer  "current_earnings_cents",    limit: 8
+    t.integer  "final_year_earnings_cents", limit: 8
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "partners", ["user_id"], name: "index_partners_on_user_id", using: :btree
+
+  create_table "residences", force: true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.string   "kind"
+    t.integer  "monthly_payment_cents"
+    t.integer  "value_cents",                limit: 8
+    t.integer  "mortgage_balance_cents",     limit: 8
+    t.integer  "years_remaining"
+    t.integer  "misc_annual_expenses_cents", limit: 8
+    t.integer  "utilities_cents"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "residences", ["user_id"], name: "index_residences_on_user_id", using: :btree
+
   create_table "users", force: true do |t|
     t.string   "email"
-    t.string   "encrypted_password",     default: "", null: false
+    t.string   "encrypted_password",                  default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
+    t.integer  "sign_in_count",                       default: 0,  null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
@@ -65,6 +108,13 @@ ActiveRecord::Schema.define(version: 20140910191242) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "authentication_token"
+    t.datetime "birthdate"
+    t.boolean  "marital_status"
+    t.string   "state"
+    t.boolean  "ss_currently_collecting"
+    t.integer  "ss_monthly_benefits_cents", limit: 8
+    t.integer  "current_earnings_cents",    limit: 8
+    t.integer  "final_year_earnings_cents", limit: 8
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

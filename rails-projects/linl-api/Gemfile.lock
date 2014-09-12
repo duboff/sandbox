@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/activeadmin/activeadmin.git
-  revision: 6472173b22621c4f838c70c1b9a47dc22b8f3fa3
+  revision: a7685f9b9fa93716a28bf6324bcfc926a30e3566
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0, >= 1.0.2)
@@ -320,6 +320,7 @@ DEPENDENCIES
   faker
   grape
   grape-active_model_serializers
+  grape-entity
   grape-swagger-rails
   jquery-rails
   meta_request

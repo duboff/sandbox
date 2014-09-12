@@ -15,12 +15,18 @@
   <body>
     <script>
       window.LinlENV = {{ENV}};
-      window.EmberENV = window.LinlENV.EmberENV;
+      //window.EmberENV = window.LinlENV.EmberENV;
+      window.EmberENV = window.LinlENV;
+      window.ENV = window.ENV || {};
+      window.ENV['simple-auth'] = {
+        authorizer: 'simple-auth-authorizer:devise'
+      };
     </script>
     <script src="assets/vendor.js"></script>
     <script src="assets/linl.js"></script>
     <script>
       window.Linl = require('linl/app')['default'].create(LinlENV.APP);
+      console.log(Linl);
     </script>
   </body>
 </html>

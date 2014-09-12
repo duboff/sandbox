@@ -5,8 +5,14 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('user', { path: '/users/:user_id' });
-  this.route('protected');
+  this.resource('user', { path: '/user' }, function() {
+    this.resource('setup', function() {
+      this.route('personal');
+      this.route('children');
+      this.route('accounts');
+    });
+    this.route('protected');
+  });
   this.route('login');
   this.route('application');
 });

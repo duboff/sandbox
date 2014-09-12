@@ -986,3 +986,958 @@ Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-10 19:56:25 -0400
 
 Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-10 19:56:47 -0400
   [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:35:24 -0400
+  [1m[35mUser Load (9.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:35:38 -0400
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:36:15 -0400
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:37:42 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:37:48 -0400
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:38:07 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:39:51 -0400
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:39:57 -0400
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:40:39 -0400
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:40:50 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:41:05 -0400
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:41:31 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:41:39 -0400
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:41:54 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:42:06 -0400
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:42:24 -0400
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:42:56 -0400
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:43:12 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:44:23 -0400
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:44:36 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:44:53 -0400
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:45:20 -0400
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:45:52 -0400
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:46:04 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:46:09 -0400
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:46:13 -0400
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:47:11 -0400
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:47:38 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:47:43 -0400
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:48:00 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:48:03 -0400
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:48:25 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:48:31 -0400
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:48:47 -0400
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:48:58 -0400
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:49:09 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:49:18 -0400
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:49:27 -0400
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:49:36 -0400
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:49:42 -0400
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 20:49:48 -0400
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-09-11 21:09:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity
+  [1m[35mUser Load (7.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'test@example.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (23.9ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = 11  [["current_sign_in_at", "2014-09-12 01:09:04.740311"], ["last_sign_in_at", "2014-09-10 23:19:32.408537"], ["sign_in_count", 23], ["updated_at", "2014-09-12 01:09:04.745739"]]
+  [1m[36m (163.1ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 361ms (Views: 2.4ms | ActiveRecord: 198.1ms)
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 21:09:05 -0400
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 21:09:15 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 21:09:39 -0400
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 21:09:44 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 21:09:52 -0400
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 21:10:15 -0400
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 21:10:34 -0400
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 21:10:41 -0400
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 21:18:48 -0400
+  [1m[35mUser Load (35.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 21:30:53 -0400
+  [1m[36mUser Load (34.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 21:30:59 -0400
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-11 21:39:25 -0400
+  [1m[36mUser Load (35.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (27.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddBaseFieldsToUsers (20140912125027)
+  [1m[35m (6.2ms)[0m  BEGIN
+  [1m[36m (37.6ms)[0m  [1mALTER TABLE "users" ADD COLUMN "birthdate" timestamp[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ADD COLUMN "marital_status" boolean
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD COLUMN "state" character varying(255)[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD COLUMN "ss_currently_collecting" boolean
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD COLUMN "ss_monthly_benefits_cents" bigint[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD COLUMN "current_earnings_cents" bigint
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD COLUMN "final_year_earnings_cents" bigint[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140912125027"]]
+  [1m[36m (173.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateChildren (20140912125611)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (48.5ms)[0m  [1mCREATE TABLE "children" ("id" serial primary key, "user_id" integer, "name" character varying(255), "birthdate" timestamp, "expected_tuition_cents" bigint, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.1ms)[0m  CREATE  INDEX  "index_children_on_user_id" ON "children"  ("user_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140912125611"]]
+  [1m[35m (1.2ms)[0m  COMMIT
+Migrating to CreateResidences (20140912131917)
+  [1m[36m (6.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (16.7ms)[0m  CREATE TABLE "residences" ("id" serial primary key, "user_id" integer, "name" character varying(255), "kind" character varying(255), "monthly_payment_cents" integer, "value_cents" bigint, "mortgage_balance_cents" bigint, "years_remaining" integer, "misc_annual_expenses_cents" bigint, "utilities_cents" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (1.1ms)[0m  [1mCREATE  INDEX  "index_residences_on_user_id" ON "residences"  ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140912131917"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePartners (20140912133942)
+  [1m[35m (5.6ms)[0m  BEGIN
+  [1m[36m (19.1ms)[0m  [1mCREATE TABLE "partners" ("id" serial primary key, "user_id" integer, "name" character varying(255), "birthdate" timestamp, "marital_status" boolean, "state" character varying(255), "ss_currently_collecting" boolean, "ss_monthly_benefits_cents" bigint, "current_earnings_cents" bigint, "final_year_earnings_cents" bigint, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (0.9ms)[0m  CREATE  INDEX  "index_partners_on_user_id" ON "partners"  ("user_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140912133942"]]
+  [1m[35m (1.5ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (18.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5041.2ms)[0m  [1mDROP DATABASE IF EXISTS "linl-api_development"[0m
+PG::ObjectInUse: ERROR:  database "linl-api_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+: DROP DATABASE IF EXISTS "linl-api_development"
+  [1m[35m (465.6ms)[0m  DROP DATABASE IF EXISTS "linl-api_test"
+  [1m[36m (2.2ms)[0m  [1mCREATE DATABASE "linl-api_development" ENCODING = 'unicode'[0m
+PG::DuplicateDatabase: ERROR:  database "linl-api_development" already exists
+: CREATE DATABASE "linl-api_development" ENCODING = 'unicode'
+  [1m[35m (369.3ms)[0m  CREATE DATABASE "linl-api_test" ENCODING = 'unicode'
+  [1m[36mSQL (3.7ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (25.3ms)[0m  DROP TABLE "active_admin_comments"
+  [1m[36m (18.0ms)[0m  [1mCREATE TABLE "active_admin_comments" ("id" serial primary key, "namespace" character varying(255), "body" text, "resource_id" character varying(255) NOT NULL, "resource_type" character varying(255) NOT NULL, "author_id" integer, "author_type" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.9ms)[0m  CREATE  INDEX  "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments" USING btree ("author_type", "author_id")
+  [1m[36m (1.4ms)[0m  [1mCREATE  INDEX  "index_active_admin_comments_on_namespace" ON "active_admin_comments" USING btree ("namespace")[0m
+  [1m[35m (2.0ms)[0m  CREATE  INDEX  "index_active_admin_comments_on_resource_type_and_resource_id" ON "active_admin_comments" USING btree ("resource_type", "resource_id")
+  [1m[36m (20.2ms)[0m  [1mDROP TABLE "admin_users"[0m
+  [1m[35m (26.3ms)[0m  CREATE TABLE "admin_users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX  "index_admin_users_on_email" ON "admin_users" USING btree ("email")[0m
+  [1m[35m (2.1ms)[0m  CREATE UNIQUE INDEX  "index_admin_users_on_reset_password_token" ON "admin_users" USING btree ("reset_password_token")
+  [1m[36m (7.6ms)[0m  [1mDROP TABLE "children"[0m
+  [1m[35m (8.9ms)[0m  CREATE TABLE "children" ("id" serial primary key, "user_id" integer, "name" character varying(255), "birthdate" timestamp, "expected_tuition_cents" bigint, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (1.4ms)[0m  [1mCREATE  INDEX  "index_children_on_user_id" ON "children" USING btree ("user_id")[0m
+  [1m[35m (12.7ms)[0m  DROP TABLE "partners"
+  [1m[36m (12.6ms)[0m  [1mCREATE TABLE "partners" ("id" serial primary key, "user_id" integer, "name" character varying(255), "birthdate" timestamp, "marital_status" boolean, "state" character varying(255), "ss_currently_collecting" boolean, "ss_monthly_benefits_cents" bigint, "current_earnings_cents" bigint, "final_year_earnings_cents" bigint, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (5.0ms)[0m  CREATE  INDEX  "index_partners_on_user_id" ON "partners" USING btree ("user_id")
+  [1m[36m (11.4ms)[0m  [1mDROP TABLE "residences"[0m
+  [1m[35m (13.0ms)[0m  CREATE TABLE "residences" ("id" serial primary key, "user_id" integer, "name" character varying(255), "kind" character varying(255), "monthly_payment_cents" integer, "value_cents" bigint, "mortgage_balance_cents" bigint, "years_remaining" integer, "misc_annual_expenses_cents" bigint, "utilities_cents" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (3.8ms)[0m  [1mCREATE  INDEX  "index_residences_on_user_id" ON "residences" USING btree ("user_id")[0m
+  [1m[35m (13.3ms)[0m  DROP TABLE "users"
+  [1m[36m (6.7ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255), "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "first_name" character varying(255), "last_name" character varying(255), "created_at" timestamp, "updated_at" timestamp, "authentication_token" character varying(255), "birthdate" timestamp, "marital_status" boolean, "state" character varying(255), "ss_currently_collecting" boolean, "ss_monthly_benefits_cents" bigint, "current_earnings_cents" bigint, "final_year_earnings_cents" bigint) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")[0m
+  [1m[35m (0.6ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (369.4ms)[0m  [1mDROP DATABASE IF EXISTS "linl-api_development"[0m
+  [1m[35m (119.8ms)[0m  DROP DATABASE IF EXISTS "linl-api_test"
+  [1m[36m (386.8ms)[0m  [1mCREATE DATABASE "linl-api_development" ENCODING = 'unicode'[0m
+  [1m[35m (246.5ms)[0m  CREATE DATABASE "linl-api_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (17.9ms)[0m  CREATE TABLE "active_admin_comments" ("id" serial primary key, "namespace" character varying(255), "body" text, "resource_id" character varying(255) NOT NULL, "resource_type" character varying(255) NOT NULL, "author_id" integer, "author_type" character varying(255), "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (18.2ms)[0m  [1mCREATE  INDEX  "index_active_admin_comments_on_author_type_and_author_id" ON "active_admin_comments" USING btree ("author_type", "author_id")[0m
+  [1m[35m (2.6ms)[0m  CREATE  INDEX  "index_active_admin_comments_on_namespace" ON "active_admin_comments" USING btree ("namespace")
+  [1m[36m (1.7ms)[0m  [1mCREATE  INDEX  "index_active_admin_comments_on_resource_type_and_resource_id" ON "active_admin_comments" USING btree ("resource_type", "resource_id")[0m
+  [1m[35m (25.7ms)[0m  CREATE TABLE "admin_users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX  "index_admin_users_on_email" ON "admin_users" USING btree ("email")[0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX  "index_admin_users_on_reset_password_token" ON "admin_users" USING btree ("reset_password_token")
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "children" ("id" serial primary key, "user_id" integer, "name" character varying(255), "birthdate" timestamp, "expected_tuition_cents" bigint, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.4ms)[0m  CREATE  INDEX  "index_children_on_user_id" ON "children" USING btree ("user_id")
+  [1m[36m (4.9ms)[0m  [1mCREATE TABLE "partners" ("id" serial primary key, "user_id" integer, "name" character varying(255), "birthdate" timestamp, "marital_status" boolean, "state" character varying(255), "ss_currently_collecting" boolean, "ss_monthly_benefits_cents" bigint, "current_earnings_cents" bigint, "final_year_earnings_cents" bigint, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.5ms)[0m  CREATE  INDEX  "index_partners_on_user_id" ON "partners" USING btree ("user_id")
+  [1m[36m (5.1ms)[0m  [1mCREATE TABLE "residences" ("id" serial primary key, "user_id" integer, "name" character varying(255), "kind" character varying(255), "monthly_payment_cents" integer, "value_cents" bigint, "mortgage_balance_cents" bigint, "years_remaining" integer, "misc_annual_expenses_cents" bigint, "utilities_cents" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.6ms)[0m  CREATE  INDEX  "index_residences_on_user_id" ON "residences" USING btree ("user_id")
+  [1m[36m (5.8ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255), "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "first_name" character varying(255), "last_name" character varying(255), "created_at" timestamp, "updated_at" timestamp, "authentication_token" character varying(255), "birthdate" timestamp, "marital_status" boolean, "state" character varying(255), "ss_currently_collecting" boolean, "ss_monthly_benefits_cents" bigint, "current_earnings_cents" bigint, "final_year_earnings_cents" bigint) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")
+  [1m[36m (2.0ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")[0m
+  [1m[35m (6.7ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) 
+  [1m[36m (6.5ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.8ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140912133942')[0m
+  [1m[35m (1.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140910165534')
+  [1m[36m (6.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140910165540')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140910172657')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140910191242')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140912125027')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140912125611')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140912131917')
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (6.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (19.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'ernest.braun@robel.net' LIMIT 1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'ernest.braun@robel.net' LIMIT 1[0m
+  [1m[35mUser Exists (0.9ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('ernest.braun@robel.net') LIMIT 1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."authentication_token" = '1XzTmFBUCVo8gNxxzkcy'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSQL (29.9ms)[0m  INSERT INTO "users" ("authentication_token", "birthdate", "created_at", "current_earnings_cents", "email", "encrypted_password", "final_year_earnings_cents", "first_name", "last_name", "marital_status", "ss_currently_collecting", "state", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"  [["authentication_token", "1XzTmFBUCVo8gNxxzkcy"], ["birthdate", "1917-05-21 03:20:31.130903"], ["created_at", "2014-09-12 15:01:44.594426"], ["current_earnings_cents", 7527334], ["email", "ernest.braun@robel.net"], ["encrypted_password", "$2a$10$Amh7s8VMT5hZVNjTEkT0beCSyU9j.yfwqQrM64TZ6bSzR1ovLVRsG"], ["final_year_earnings_cents", 93331666], ["first_name", "Meggie"], ["last_name", "Sauer"], ["marital_status", "f"], ["ss_currently_collecting", "f"], ["state", "NE"], ["updated_at", "2014-09-12 15:01:44.594426"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'collin_simonis@schowalter.net' LIMIT 1[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'collin_simonis@schowalter.net' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('collin_simonis@schowalter.net') LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."authentication_token" = 'Z77CyUapC7se14Th5CRE'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("authentication_token", "birthdate", "created_at", "current_earnings_cents", "email", "encrypted_password", "final_year_earnings_cents", "first_name", "last_name", "marital_status", "ss_currently_collecting", "state", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["authentication_token", "Z77CyUapC7se14Th5CRE"], ["birthdate", "1947-01-12 21:31:12.758306"], ["created_at", "2014-09-12 15:01:44.770304"], ["current_earnings_cents", 75040207], ["email", "collin_simonis@schowalter.net"], ["encrypted_password", "$2a$10$k75dtZYGh1tL2MWqSEmvR.3hX5e2vV3y/WxJHDG14/1qkGs936xzG"], ["final_year_earnings_cents", 97995759], ["first_name", "Thomas"], ["last_name", "Mayer"], ["marital_status", "f"], ["ss_currently_collecting", "f"], ["state", "MD"], ["updated_at", "2014-09-12 15:01:44.770304"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "residences" ("created_at", "misc_annual_expenses_cents", "monthly_payment_cents", "mortgage_balance_cents", "name", "updated_at", "user_id", "utilities_cents", "value_cents", "years_remaining") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["created_at", "2014-09-12 15:01:44.821015"], ["misc_annual_expenses_cents", 8144673], ["monthly_payment_cents", 304210], ["mortgage_balance_cents", 9663334], ["name", "Ms. Maybelle Nikolaus"], ["updated_at", "2014-09-12 15:01:44.821015"], ["user_id", 2], ["utilities_cents", 32361], ["value_cents", 4231673], ["years_remaining", 5]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'caria_hoeger@rolfson.net' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'caria_hoeger@rolfson.net' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('caria_hoeger@rolfson.net') LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."authentication_token" = 'hSnYGz6ma5Ee7tAppkks'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("authentication_token", "birthdate", "created_at", "current_earnings_cents", "email", "encrypted_password", "final_year_earnings_cents", "first_name", "last_name", "marital_status", "ss_currently_collecting", "state", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["authentication_token", "hSnYGz6ma5Ee7tAppkks"], ["birthdate", "1914-09-21 09:34:31.457449"], ["created_at", "2014-09-12 15:01:44.944543"], ["current_earnings_cents", 84854490], ["email", "caria_hoeger@rolfson.net"], ["encrypted_password", "$2a$10$Z8ZqqnCmhi356gFUOShsleTnz.yj9X4O0Y2tOnDKgEImVmRnoWo9."], ["final_year_earnings_cents", 23168764], ["first_name", "Halie"], ["last_name", "Boyer"], ["marital_status", "f"], ["ss_currently_collecting", "f"], ["state", "OH"], ["updated_at", "2014-09-12 15:01:44.944543"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "residences" ("created_at", "misc_annual_expenses_cents", "monthly_payment_cents", "mortgage_balance_cents", "name", "updated_at", "user_id", "utilities_cents", "value_cents", "years_remaining") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["created_at", "2014-09-12 15:01:45.255765"], ["misc_annual_expenses_cents", 9180889], ["monthly_payment_cents", 254755], ["mortgage_balance_cents", 7660225], ["name", "Guiseppe Brakus"], ["updated_at", "2014-09-12 15:01:45.255765"], ["user_id", 3], ["utilities_cents", 47989], ["value_cents", 882250], ["years_remaining", 5]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (4.1ms)[0m  [1mINSERT INTO "children" ("birthdate", "created_at", "expected_tuition_cents", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["birthdate", "1971-08-10 15:12:37.985907"], ["created_at", "2014-09-12 15:01:45.285020"], ["expected_tuition_cents", 26904583], ["name", "Gilbert Schneider"], ["updated_at", "2014-09-12 15:01:45.285020"], ["user_id", 3]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "children" ("birthdate", "created_at", "expected_tuition_cents", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["birthdate", "1947-07-30 13:07:44.362208"], ["created_at", "2014-09-12 15:01:45.303122"], ["expected_tuition_cents", 1525734], ["name", "Frida Bode"], ["updated_at", "2014-09-12 15:01:45.303122"], ["user_id", 3]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'andre.blanda@jones.info' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'andre.blanda@jones.info' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('andre.blanda@jones.info') LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."authentication_token" = 'eLjMLYhFJvYZ3jDcmV6z'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("authentication_token", "birthdate", "created_at", "current_earnings_cents", "email", "encrypted_password", "final_year_earnings_cents", "first_name", "last_name", "marital_status", "ss_currently_collecting", "state", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["authentication_token", "eLjMLYhFJvYZ3jDcmV6z"], ["birthdate", "1949-09-22 15:03:06.434766"], ["created_at", "2014-09-12 15:01:45.423361"], ["current_earnings_cents", 25625258], ["email", "andre.blanda@jones.info"], ["encrypted_password", "$2a$10$8n.VAh8mCGz.d5gTQceQaeroN63QWgBnc0hDBFIGfHN73FB9EC36S"], ["final_year_earnings_cents", 48192409], ["first_name", "Kaelyn"], ["last_name", "Hammes"], ["marital_status", "f"], ["ss_currently_collecting", "f"], ["state", "KY"], ["updated_at", "2014-09-12 15:01:45.423361"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'reginald.kuhic@reichertprohaska.com' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'reginald.kuhic@reichertprohaska.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('reginald.kuhic@reichertprohaska.com') LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."authentication_token" = '5d3p-TjXs_gqmgMgpX96'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("authentication_token", "birthdate", "created_at", "current_earnings_cents", "email", "encrypted_password", "final_year_earnings_cents", "first_name", "last_name", "marital_status", "ss_currently_collecting", "state", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"  [["authentication_token", "5d3p-TjXs_gqmgMgpX96"], ["birthdate", "1982-07-08 07:35:38.607722"], ["created_at", "2014-09-12 15:01:45.539163"], ["current_earnings_cents", 75281613], ["email", "reginald.kuhic@reichertprohaska.com"], ["encrypted_password", "$2a$10$CT0Pap/PL56keHx3XhkF..yC5fctFl0gtSj9qIWLYWlF.Bb14lLiS"], ["final_year_earnings_cents", 73685509], ["first_name", "Michel"], ["last_name", "Hermiston"], ["marital_status", "f"], ["ss_currently_collecting", "t"], ["state", "GA"], ["updated_at", "2014-09-12 15:01:45.539163"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  BEGIN
+  [1m[36mPartner Exists (1.3ms)[0m  [1mSELECT  1 AS one FROM "partners"  WHERE "partners"."user_id" = 5 LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "partners" ("birthdate", "created_at", "current_earnings_cents", "final_year_earnings_cents", "marital_status", "name", "ss_currently_collecting", "state", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["birthdate", "1997-10-24 18:08:32.415674"], ["created_at", "2014-09-12 15:01:45.592429"], ["current_earnings_cents", 64621613], ["final_year_earnings_cents", 28932869], ["marital_status", "f"], ["name", "Audie Fritsch"], ["ss_currently_collecting", "t"], ["state", "NJ"], ["updated_at", "2014-09-12 15:01:45.592429"], ["user_id", 5]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "children" ("birthdate", "created_at", "expected_tuition_cents", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["birthdate", "1925-07-07 20:51:09.386606"], ["created_at", "2014-09-12 15:01:45.606722"], ["expected_tuition_cents", 28414073], ["name", "Mrs. Camden Donnelly"], ["updated_at", "2014-09-12 15:01:45.606722"], ["user_id", 5]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'christophe@yundtgleichner.name' LIMIT 1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'christophe@yundtgleichner.name' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('christophe@yundtgleichner.name') LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."authentication_token" = 'rKv1t2WZVQwFVjmyGzXH'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("authentication_token", "birthdate", "created_at", "current_earnings_cents", "email", "encrypted_password", "final_year_earnings_cents", "first_name", "last_name", "marital_status", "ss_currently_collecting", "state", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"  [["authentication_token", "rKv1t2WZVQwFVjmyGzXH"], ["birthdate", "1954-09-06 03:39:25.879343"], ["created_at", "2014-09-12 15:01:45.724070"], ["current_earnings_cents", 12244591], ["email", "christophe@yundtgleichner.name"], ["encrypted_password", "$2a$10$0fRkD0cET2xGqLwpQSFWoep/uHJKVL0J7NkAuSkW7HJPBHVQMuWzW"], ["final_year_earnings_cents", 62502013], ["first_name", "Marilyne"], ["last_name", "Nolan"], ["marital_status", "f"], ["ss_currently_collecting", "f"], ["state", "MO"], ["updated_at", "2014-09-12 15:01:45.724070"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'mckayla@schuppe.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'mckayla@schuppe.com' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('mckayla@schuppe.com') LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."authentication_token" = 'ywAbQbrqnPnsEo3Mykes'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("authentication_token", "birthdate", "created_at", "current_earnings_cents", "email", "encrypted_password", "final_year_earnings_cents", "first_name", "last_name", "marital_status", "ss_currently_collecting", "state", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["authentication_token", "ywAbQbrqnPnsEo3Mykes"], ["birthdate", "2013-08-14 20:16:28.502310"], ["created_at", "2014-09-12 15:01:45.875785"], ["current_earnings_cents", 17735470], ["email", "mckayla@schuppe.com"], ["encrypted_password", "$2a$10$6jgFvCHNuBefs0KqHeNW5uU3bCf.GPfk32TwFZB4sCVeGB6aAXuJu"], ["final_year_earnings_cents", 3693200], ["first_name", "Hoyt"], ["last_name", "Berge"], ["marital_status", "f"], ["ss_currently_collecting", "f"], ["state", "FL"], ["updated_at", "2014-09-12 15:01:45.875785"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mPartner Exists (0.5ms)[0m  SELECT  1 AS one FROM "partners"  WHERE "partners"."user_id" = 7 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "partners" ("birthdate", "created_at", "current_earnings_cents", "final_year_earnings_cents", "marital_status", "name", "ss_currently_collecting", "state", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["birthdate", "1960-11-28 17:03:47.400920"], ["created_at", "2014-09-12 15:01:45.894352"], ["current_earnings_cents", 47254837], ["final_year_earnings_cents", 98030822], ["marital_status", "f"], ["name", "Dario Howe"], ["ss_currently_collecting", "f"], ["state", "NH"], ["updated_at", "2014-09-12 15:01:45.894352"], ["user_id", 7]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'reginald.aufderhar@hamillweinat.info' LIMIT 1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'reginald.aufderhar@hamillweinat.info' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('reginald.aufderhar@hamillweinat.info') LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."authentication_token" = 'Sg3WPZPFsudEzyZfpQys'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("authentication_token", "birthdate", "created_at", "current_earnings_cents", "email", "encrypted_password", "final_year_earnings_cents", "first_name", "last_name", "marital_status", "ss_currently_collecting", "state", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"  [["authentication_token", "Sg3WPZPFsudEzyZfpQys"], ["birthdate", "1975-09-13 17:04:29.335248"], ["created_at", "2014-09-12 15:01:46.023058"], ["current_earnings_cents", 81228969], ["email", "reginald.aufderhar@hamillweinat.info"], ["encrypted_password", "$2a$10$.GJ5Q3OBQZBK1TSQWtqC9OW9IVChWE6MvMHWPHDgvUPe9HZ0Tkxky"], ["final_year_earnings_cents", 20321370], ["first_name", "Beau"], ["last_name", "Hoeger"], ["marital_status", "f"], ["ss_currently_collecting", "f"], ["state", "UT"], ["updated_at", "2014-09-12 15:01:46.023058"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mPartner Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "partners"  WHERE "partners"."user_id" = 8 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "partners" ("birthdate", "created_at", "current_earnings_cents", "final_year_earnings_cents", "marital_status", "name", "ss_currently_collecting", "state", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["birthdate", "1935-08-30 10:52:07.904975"], ["created_at", "2014-09-12 15:01:46.042428"], ["current_earnings_cents", 35000684], ["final_year_earnings_cents", 5304297], ["marital_status", "f"], ["name", "Stan Kovacek"], ["ss_currently_collecting", "t"], ["state", "GA"], ["updated_at", "2014-09-12 15:01:46.042428"], ["user_id", 8]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "residences" ("created_at", "misc_annual_expenses_cents", "monthly_payment_cents", "mortgage_balance_cents", "name", "updated_at", "user_id", "utilities_cents", "value_cents", "years_remaining") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["created_at", "2014-09-12 15:01:46.056535"], ["misc_annual_expenses_cents", 3389595], ["monthly_payment_cents", 392637], ["mortgage_balance_cents", 5513733], ["name", "Reyes DuBuque DVM"], ["updated_at", "2014-09-12 15:01:46.056535"], ["user_id", 8], ["utilities_cents", 40895], ["value_cents", 5790086], ["years_remaining", 5]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "children" ("birthdate", "created_at", "expected_tuition_cents", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["birthdate", "2001-09-26 05:25:32.003092"], ["created_at", "2014-09-12 15:01:46.072147"], ["expected_tuition_cents", 27261154], ["name", "Agustina Beahan"], ["updated_at", "2014-09-12 15:01:46.072147"], ["user_id", 8]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "children" ("birthdate", "created_at", "expected_tuition_cents", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["birthdate", "1999-07-29 17:59:57.923189"], ["created_at", "2014-09-12 15:01:46.086082"], ["expected_tuition_cents", 2467652], ["name", "Dr. Myron Littel"], ["updated_at", "2014-09-12 15:01:46.086082"], ["user_id", 8]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kevon.mann@witting.com' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kevon.mann@witting.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('kevon.mann@witting.com') LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."authentication_token" = 'VRfj82JDz1TNeVzTzrLV'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("authentication_token", "birthdate", "created_at", "current_earnings_cents", "email", "encrypted_password", "final_year_earnings_cents", "first_name", "last_name", "marital_status", "ss_currently_collecting", "state", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"  [["authentication_token", "VRfj82JDz1TNeVzTzrLV"], ["birthdate", "1983-04-21 05:08:31.934243"], ["created_at", "2014-09-12 15:01:46.205216"], ["current_earnings_cents", 27707333], ["email", "kevon.mann@witting.com"], ["encrypted_password", "$2a$10$P3DxZD5XISHt3284GQ9Tve4N4hX2rdrSrGk5ZxlI4Q.7gcLOPa8AO"], ["final_year_earnings_cents", 37677178], ["first_name", "Joannie"], ["last_name", "Ritchie"], ["marital_status", "f"], ["ss_currently_collecting", "f"], ["state", "AL"], ["updated_at", "2014-09-12 15:01:46.205216"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "children" ("birthdate", "created_at", "expected_tuition_cents", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["birthdate", "2003-12-16 13:15:20.337160"], ["created_at", "2014-09-12 15:01:46.219603"], ["expected_tuition_cents", 91659541], ["name", "Dayna Donnelly"], ["updated_at", "2014-09-12 15:01:46.219603"], ["user_id", 9]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'jamison_ankunding@christiansen.com' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'jamison_ankunding@christiansen.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('jamison_ankunding@christiansen.com') LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."authentication_token" = '3xEgz2XakT-XW-rKGhZr'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("authentication_token", "birthdate", "created_at", "current_earnings_cents", "email", "encrypted_password", "final_year_earnings_cents", "first_name", "last_name", "marital_status", "ss_currently_collecting", "state", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"  [["authentication_token", "3xEgz2XakT-XW-rKGhZr"], ["birthdate", "1953-02-12 00:46:34.808205"], ["created_at", "2014-09-12 15:01:46.341653"], ["current_earnings_cents", 73591010], ["email", "jamison_ankunding@christiansen.com"], ["encrypted_password", "$2a$10$4tlKy7xwyltuZBNChmbeWOzIiNNsN.SEwdtXxa5spJdwxQdXhRTd6"], ["final_year_earnings_cents", 27668572], ["first_name", "Ardella"], ["last_name", "Kulas"], ["marital_status", "f"], ["ss_currently_collecting", "t"], ["state", "IL"], ["updated_at", "2014-09-12 15:01:46.341653"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO "children" ("birthdate", "created_at", "expected_tuition_cents", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["birthdate", "1947-06-09 07:58:52.504734"], ["created_at", "2014-09-12 15:01:46.373188"], ["expected_tuition_cents", 96163390], ["name", "Anita Pagac"], ["updated_at", "2014-09-12 15:01:46.373188"], ["user_id", 10]]
+  [1m[35m (6.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "children" ("birthdate", "created_at", "expected_tuition_cents", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["birthdate", "1954-08-25 03:35:20.194589"], ["created_at", "2014-09-12 15:01:46.402290"], ["expected_tuition_cents", 14292466], ["name", "Nikolas Bergstrom"], ["updated_at", "2014-09-12 15:01:46.402290"], ["user_id", 10]]
+  [1m[36m (11.6ms)[0m  [1mCOMMIT[0m
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (1.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'test@example.com' LIMIT 1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'test@example.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users"  WHERE LOWER("users"."email") = LOWER('test@example.com') LIMIT 1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."authentication_token" = 'iJCLnV1qeUwyN6bnS3sY'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("authentication_token", "birthdate", "created_at", "current_earnings_cents", "email", "encrypted_password", "final_year_earnings_cents", "first_name", "last_name", "marital_status", "ss_currently_collecting", "state", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"  [["authentication_token", "iJCLnV1qeUwyN6bnS3sY"], ["birthdate", "1928-01-21 08:42:08.102138"], ["created_at", "2014-09-12 15:03:35.458258"], ["current_earnings_cents", 9752002], ["email", "test@example.com"], ["encrypted_password", "$2a$10$dhpz8MTr5UpGXmRaqD5RQu8JlyvYrD9pMzBcuSPMF.ZiLS.DTCgge"], ["final_year_earnings_cents", 18346490], ["first_name", "Gerry"], ["last_name", "Ondricka"], ["marital_status", "f"], ["ss_currently_collecting", "t"], ["state", "WY"], ["updated_at", "2014-09-12 15:03:35.458258"]]
+  [1m[36m (5.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mPartner Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "partners"  WHERE "partners"."user_id" = 11 LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "partners" ("birthdate", "created_at", "current_earnings_cents", "final_year_earnings_cents", "marital_status", "name", "ss_currently_collecting", "state", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["birthdate", "1996-09-14 16:29:35.611830"], ["created_at", "2014-09-12 15:03:35.870952"], ["current_earnings_cents", 6626498], ["final_year_earnings_cents", 11960567], ["marital_status", "f"], ["name", "D'angelo Emmerich"], ["ss_currently_collecting", "t"], ["state", "MT"], ["updated_at", "2014-09-12 15:03:35.870952"], ["user_id", 11]]
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "residences" ("created_at", "misc_annual_expenses_cents", "monthly_payment_cents", "mortgage_balance_cents", "name", "updated_at", "user_id", "utilities_cents", "value_cents", "years_remaining") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["created_at", "2014-09-12 15:03:35.911809"], ["misc_annual_expenses_cents", 9459556], ["monthly_payment_cents", 245465], ["mortgage_balance_cents", 5584420], ["name", "Maurice Leannon"], ["updated_at", "2014-09-12 15:03:35.911809"], ["user_id", 11], ["utilities_cents", 90367], ["value_cents", 422571], ["years_remaining", 5]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "children" ("birthdate", "created_at", "expected_tuition_cents", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["birthdate", "1989-09-07 13:41:57.180179"], ["created_at", "2014-09-12 15:03:35.943249"], ["expected_tuition_cents", 20954363], ["name", "Ms. Ola Reilly"], ["updated_at", "2014-09-12 15:03:35.943249"], ["user_id", 11]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-12 11:05:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPartner Load (0.6ms)[0m  [1mSELECT  "partners".* FROM "partners"  WHERE "partners"."user_id" = $1 LIMIT 1[0m  [["user_id", 11]]
+  [1m[35mChild Load (0.5ms)[0m  SELECT "children".* FROM "children"  WHERE "children"."user_id" = $1  [["user_id", 11]]
+  [1m[36mResidence Load (0.5ms)[0m  [1mSELECT "residences".* FROM "residences"  WHERE "residences"."user_id" = $1[0m  [["user_id", 11]]
+  [1m[35m (0.3ms)[0m  SELECT "children"."id" FROM "children"  WHERE "children"."user_id" = $1  [["user_id", 11]]
+  [1m[36m (0.2ms)[0m  [1mSELECT "residences"."id" FROM "residences"  WHERE "residences"."user_id" = $1[0m  [["user_id", 11]]
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-12 11:07:12 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPartner Load (0.7ms)[0m  [1mSELECT  "partners".* FROM "partners"  WHERE "partners"."user_id" = $1 LIMIT 1[0m  [["user_id", 11]]
+  [1m[35mChild Load (0.5ms)[0m  SELECT "children".* FROM "children"  WHERE "children"."user_id" = $1  [["user_id", 11]]
+  [1m[36mResidence Load (0.5ms)[0m  [1mSELECT "residences".* FROM "residences"  WHERE "residences"."user_id" = $1[0m  [["user_id", 11]]
+  [1m[35m (0.3ms)[0m  SELECT "children"."id" FROM "children"  WHERE "children"."user_id" = $1  [["user_id", 11]]
+  [1m[36m (0.3ms)[0m  [1mSELECT "residences"."id" FROM "residences"  WHERE "residences"."user_id" = $1[0m  [["user_id", 11]]
+
+
+Started GET "/api/v1/users/1" for 127.0.0.1 at 2014-09-12 11:07:18 -0400
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPartner Load (0.6ms)[0m  [1mSELECT  "partners".* FROM "partners"  WHERE "partners"."user_id" = $1 LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mChild Load (1.5ms)[0m  SELECT "children".* FROM "children"  WHERE "children"."user_id" = $1  [["user_id", 1]]
+  [1m[36mResidence Load (0.4ms)[0m  [1mSELECT "residences".* FROM "residences"  WHERE "residences"."user_id" = $1[0m  [["user_id", 1]]
+
+NoMethodError - undefined method `id' for nil:NilClass:
+   () Users/vorDd/sandbox/rails-projects/linl-api/app/controllers/api/v1/entities/user_entity.rb:8:in `block in <class:UserEntity>'
+  grape-entity (0.4.4) lib/grape_entity/entity.rb:524:in `value_for'
+  grape-entity (0.4.4) lib/grape_entity/entity.rb:460:in `block in serializable_hash'
+  grape-entity (0.4.4) lib/grape_entity/entity.rb:458:in `serializable_hash'
+  activesupport (4.1.5) lib/active_support/core_ext/object/json.rb:159:in `block in as_json'
+  activesupport (4.1.5) lib/active_support/core_ext/object/json.rb:159:in `as_json'
+  activesupport (4.1.5) lib/active_support/json/encoding.rb:34:in `encode'
+  activesupport (4.1.5) lib/active_support/json/encoding.rb:21:in `encode'
+  activesupport (4.1.5) lib/active_support/core_ext/object/json.rb:37:in `to_json_with_active_support_encoder'
+  grape (0.9.0) lib/grape/formatter/json.rb:6:in `call'
+  grape-active_model_serializers (1.2.1) lib/grape-active_model_serializers/formatter.rb:11:in `call'
+  grape (0.9.0) lib/grape/middleware/formatter.rb:33:in `block in after'
+  grape (0.9.0) lib/grape/middleware/formatter.rb:32:in `after'
+  grape (0.9.0) lib/grape/middleware/base.rb:25:in `call!'
+  grape (0.9.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.9.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.9.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.9.0) lib/grape/middleware/error.rb:27:in `block in call!'
+  grape (0.9.0) lib/grape/middleware/error.rb:26:in `call!'
+  grape (0.9.0) lib/grape/middleware/base.rb:18:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  rack (1.5.2) lib/rack/builder.rb:138:in `call'
+  grape (0.9.0) lib/grape/endpoint.rb:172:in `call!'
+  grape (0.9.0) lib/grape/endpoint.rb:160:in `call'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:152:in `block in call'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:96:in `block in recognize'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:68:in `optimized_each'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:95:in `recognize'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:141:in `call'
+  grape (0.9.0) lib/grape/api.rb:128:in `call'
+  grape (0.9.0) lib/grape/api.rb:43:in `call!'
+  grape (0.9.0) lib/grape/api.rb:39:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack-cors (0.2.9) lib/rack/cors.rb:54:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/cf2ef976d47a1b43/variables" for 127.0.0.1 at 2014-09-12 11:07:18 -0400
+
+
+Started GET "/api/v1/users/1" for 127.0.0.1 at 2014-09-12 11:12:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+
+SyntaxError - syntax error, unexpected '}'
+/Users/vorDd/sandbox/rails-projects/linl-api/app/controllers/api/v1/entities/user_entity.rb:9: syntax error, unexpected '}'
+/Users/vorDd/sandbox/rails-projects/linl-api/app/controllers/api/v1/entities/user_entity.rb:10: syntax error, unexpected '}':
+   () Users/vorDd/sandbox/rails-projects/linl-api/app/controllers/api/v1/entities/user_entity.rb:8:in `'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.5) lib/active_support/dependencies.rb:180:in `const_missing'
+   () Users/vorDd/sandbox/rails-projects/linl-api/app/controllers/api/v1/users.rb:13:in `block (2 levels) in <class:Users>'
+  grape (0.9.0) lib/grape/endpoint.rb:45:in `block in generate_api_method'
+  grape (0.9.0) lib/grape/endpoint.rb:220:in `run'
+  grape (0.9.0) lib/grape/endpoint.rb:171:in `block in call!'
+  grape (0.9.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.9.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.9.0) lib/grape/middleware/base.rb:24:in `call!'
+  grape (0.9.0) lib/grape/middleware/base.rb:18:in `call'
+  grape (0.9.0) lib/grape/middleware/error.rb:27:in `block in call!'
+  grape (0.9.0) lib/grape/middleware/error.rb:26:in `call!'
+  grape (0.9.0) lib/grape/middleware/base.rb:18:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  rack (1.5.2) lib/rack/builder.rb:138:in `call'
+  grape (0.9.0) lib/grape/endpoint.rb:172:in `call!'
+  grape (0.9.0) lib/grape/endpoint.rb:160:in `call'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:152:in `block in call'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:96:in `block in recognize'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:68:in `optimized_each'
+  rack-mount (0.8.3) lib/rack/mount/code_generation.rb:95:in `recognize'
+  rack-mount (0.8.3) lib/rack/mount/route_set.rb:141:in `call'
+  grape (0.9.0) lib/grape/api.rb:128:in `call'
+  grape (0.9.0) lib/grape/api.rb:43:in `call!'
+  grape (0.9.0) lib/grape/api.rb:39:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack-cors (0.2.9) lib/rack/cors.rb:54:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+   () Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+   () Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+   () Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2575e2cbb563f565/variables" for 127.0.0.1 at 2014-09-12 11:12:19 -0400
+
+
+Started GET "/api/v1/users/1" for 127.0.0.1 at 2014-09-12 11:13:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPartner Load (0.6ms)[0m  [1mSELECT  "partners".* FROM "partners"  WHERE "partners"."user_id" = $1 LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mChild Load (0.4ms)[0m  SELECT "children".* FROM "children"  WHERE "children"."user_id" = $1  [["user_id", 1]]
+  [1m[36mResidence Load (0.6ms)[0m  [1mSELECT "residences".* FROM "residences"  WHERE "residences"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT "children"."id" FROM "children"  WHERE "children"."user_id" = $1  [["user_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT "residences"."id" FROM "residences"  WHERE "residences"."user_id" = $1[0m  [["user_id", 1]]
+
+
+Started GET "/api/v1/users/2" for 127.0.0.1 at 2014-09-12 11:13:11 -0400
+  [1m[35mUser Load (3.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPartner Load (0.4ms)[0m  [1mSELECT  "partners".* FROM "partners"  WHERE "partners"."user_id" = $1 LIMIT 1[0m  [["user_id", 2]]
+  [1m[35mChild Load (0.8ms)[0m  SELECT "children".* FROM "children"  WHERE "children"."user_id" = $1  [["user_id", 2]]
+  [1m[36mResidence Load (0.5ms)[0m  [1mSELECT "residences".* FROM "residences"  WHERE "residences"."user_id" = $1[0m  [["user_id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT "children"."id" FROM "children"  WHERE "children"."user_id" = $1  [["user_id", 2]]
+  [1m[36m (0.3ms)[0m  [1mSELECT "residences"."id" FROM "residences"  WHERE "residences"."user_id" = $1[0m  [["user_id", 2]]
+
+
+Started GET "/api/v1/users/3" for 127.0.0.1 at 2014-09-12 11:13:21 -0400
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPartner Load (0.4ms)[0m  [1mSELECT  "partners".* FROM "partners"  WHERE "partners"."user_id" = $1 LIMIT 1[0m  [["user_id", 3]]
+  [1m[35mChild Load (0.7ms)[0m  SELECT "children".* FROM "children"  WHERE "children"."user_id" = $1  [["user_id", 3]]
+  [1m[36mResidence Load (0.4ms)[0m  [1mSELECT "residences".* FROM "residences"  WHERE "residences"."user_id" = $1[0m  [["user_id", 3]]
+  [1m[35m (0.4ms)[0m  SELECT "children"."id" FROM "children"  WHERE "children"."user_id" = $1  [["user_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT "residences"."id" FROM "residences"  WHERE "residences"."user_id" = $1[0m  [["user_id", 3]]
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+
+Started GET "/api/v1/users/11" for 127.0.0.1 at 2014-09-12 12:01:12 -0400
+  [1m[36mUser Load (14.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPartner Load (14.8ms)[0m  SELECT  "partners".* FROM "partners"  WHERE "partners"."user_id" = $1 LIMIT 1  [["user_id", 11]]
+  [1m[36mChild Load (7.7ms)[0m  [1mSELECT "children".* FROM "children"  WHERE "children"."user_id" = $1[0m  [["user_id", 11]]
+  [1m[35mResidence Load (0.7ms)[0m  SELECT "residences".* FROM "residences"  WHERE "residences"."user_id" = $1  [["user_id", 11]]
+  [1m[36m (0.3ms)[0m  [1mSELECT "children"."id" FROM "children"  WHERE "children"."user_id" = $1[0m  [["user_id", 11]]
+  [1m[35m (0.3ms)[0m  SELECT "residences"."id" FROM "residences"  WHERE "residences"."user_id" = $1  [["user_id", 11]]
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/vorDd/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
