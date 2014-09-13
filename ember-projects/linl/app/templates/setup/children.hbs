@@ -1,1 +1,34 @@
-This is the children inputs form
+<div {{bind-attr class='childVisible:hidden'}}>
+  <label>Do you have any children?</label>
+  {{input type='checkbox' checked=childToggle}}
+</div>
+<form {{bind-attr class='childVisible::hidden'}}>
+  <fieldset>
+    <legend>Children</legend>
+    {{#each child in children}}
+      {{child.name}}
+    {{/each}}
+    <div>
+      <label>Name</label>
+      {{input value=fields.child.name}}
+    </div>
+    <div>
+      <label>Birthdate</label>
+      {{view Ember.TextField type='date' value=fields.child.birthdate}}
+    </div>
+    <div>
+      <label>First year of college</label>
+      {{view Ember.TextField type='date' value=fields.child.college_entry}}
+    </div>
+    <div>
+      <label>Last year of college</label>
+      {{view Ember.TextField type='date' value=fields.child.college_exit}}
+    </div>
+    <div>
+      <label>Cost of college annually</label>
+      {{input type='currency' value=fields.child.expected_tuition}}
+    </div>
+    <a href="#" {{action "saveChanges"}} class="btn btn-success">Add Child</a>
+    <a href="#" {{action "saveChangesTransition"}} class="btn btn-success">Next</a>
+  </fieldset>
+</form>

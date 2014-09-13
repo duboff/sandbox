@@ -3,25 +3,42 @@ import Ember from 'ember';
 export default Ember.ObjectController.extend({
   actions: {
     saveChanges: function() {
+      console.log(this.get('fields'));
+      this.get('model').save();
+    },
+    saveChangesTransition: function() {
       var _this = this;
       console.log(this.get('fields'));
-      _this.transitionToRoute('setup.children');
+      var curPath = this.get('curPath');
+      var paths = this.get('formPath')(curPath);
+      this.set('curPath', paths.next);
+      _this.transitionToRoute('setup.' + paths.next);
       this.get('model').save().then(function() {
         _this.transitionToRoute('setup.children');
       });
     }
   },
 
+  curPath: 'personal',
+  formPath: function(curPath) {
+    var paths = { personal: {prev: 'personal', next: 'children'},
+                  children: {prev: 'personal', next: ''}
+                };
+
+    return paths[curPath];
+  },
+
   partnerVisible: false,
-  changedManually: false, //total hack, needs fixing
+  partnerToggle: false, //total hack, needs fixing
   isPartnerVisible: function() {
     this.toggleProperty('partnerVisible');
-  }.observes('changedManually'),
+  }.observes('partnerToggle'),
 
-  marital_statuses: [
-    {value: false, label: 'No'},
-    {value: true, label: 'Yes'}
-  ],
+  childVisible: false,
+  childToggle: false, //still a hack
+  isChildVisible: function() {
+    this.toggleProperty('childVisible');
+  }.observes('childToggle'),
 
   states: [ {label: "AL", value: 1}, {label: "AK", value: 2}, {label: "AZ", value: 3}, {label: "AR", value: 4}, {label: "CA", value: 5}, {label: "CO", value: 6}, {label: "CT", value: 7}, {label: "DE", value: 8}, {label: "DC", value: 9},
             {label: "FL", value: 10}, {label: "GA", value: 11}, {label: "HI", value: 12}, {label: "ID", value: 13}, {label: "IL", value: 14}, {label: "IN", value: 15}, {label: "IA", value: 16}, {label: "KS", value: 17}, {label: "KY", value: 18}, {label: "LA", value: 19},

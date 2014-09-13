@@ -2,14 +2,6 @@
   <fieldset {{bind-attr class='partnerVisible:col-xs-6:col-xs12'}}>
     <legend>You</legend>
     <div>
-      <label>First Name</label>
-      {{input value=fields.first_name}}
-    </div>
-    <div>
-      <label>Last Name</label>
-      {{input value=fields.last_name}}
-    </div>
-    <div>
       <label>Birthdate</label>
       {{view Ember.TextField type='date' value=fields.date}}
     </div>
@@ -20,23 +12,15 @@
     </div>
     <div>
       <label>Current Yearly Earnings</label>
-      {{view Ember.TextField type='currency' value=fields.current_earnings_cents }}
+      {{input type='currency' value=fields.current_earnings_cents placeholder=0}}
     </div>
     <div>
       <label>Final Year Earnings</label>
-      {{view Ember.TextField type='currency' value=fields.final_year_earnings_cents }}
-    </div>
-    <div>
-      <label>SS Benefits?</label>
-      {{input type='checkbox' name='fields.ss_currently_collecting'}}
-    </div>
-    <div>
-      <label>Social Security Benefits per month</label>
-      {{view Ember.TextField type='currency' value=fields.ss_currently_collecting }}
+      {{view Ember.TextField type='currency' value=fields.final_year_earnings_cents placeholder=0}}
     </div>
     <div>
       <label>Married?</label>
-      {{input type='checkbox' checked=changedManually}}
+      {{input type='checkbox' checked=partnerToggle}}
     </div>
   </fieldset>
   <fieldset {{bind-attr class='partnerVisible:col-xs-6:hidden'}}>
@@ -56,20 +40,12 @@
     </div>
     <div>
       <label>Current Yearly Earnings</label>
-      {{view Ember.TextField type='currency' value=fields.partner.current_earnings_cents }}
+      {{view Ember.TextField type='currency' value=fields.partner.current_earnings_cents placeholder=0}}
     </div>
     <div>
       <label>Final Year Earnings</label>
-      {{view Ember.TextField type='currency' value=fields.partner.final_year_earnings_cents }}
-    </div>
-    <div>
-      <label>SS Benefits?</label>
-      {{input type='checkbox' name='fields.partner.ss_currently_collecting'}}
-    </div>
-    <div>
-      <label>Social Security Benefits per month</label>
-      {{view Ember.TextField type='currency' value=fields.partner.ss_currently_collecting }}
+      {{view Ember.TextField type='currency' value=fields.partner.final_year_earnings_cents placeholder=0}}
     </div>
   </fieldset>
-  <a href="#" {{action "saveChanges"}} class="btn btn-success">Next</a>
+  <a href="#" {{action "saveChangesTransition"}} class="btn btn-success">Next</a>
 </form>
