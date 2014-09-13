@@ -1,5 +1,6 @@
 <form>
-  <fieldset>
+  <fieldset {{bind-attr class='partnerVisible:col-xs-6:col-xs12'}}>
+    <legend>You</legend>
     <div>
       <label>First Name</label>
       {{input value=fields.first_name}}
@@ -38,38 +39,37 @@
       {{input type='checkbox' checked=changedManually}}
     </div>
   </fieldset>
-  <fieldset>
-    <div {{bind-attr class='partnerVisible::hidden'}}>
-      <div>
-        <label>Name</label>
-        {{input value=fields.partner.name}}
-      </div>
-      <div>
-        <label>Birthdate</label>
-        {{view Ember.TextField type='date' value=fields.partner.date}}
-      </div>
-      <div>
-        <label>State</label>
-        {{view Ember.Select content=states 
-          optionValuePath="content.value" optionLabelPath="content.label" }}
-      </div>
-      <div>
-        <label>Current Yearly Earnings</label>
-        {{view Ember.TextField type='currency' value=fields.partner.current_earnings_cents }}
-      </div>
-      <div>
-        <label>Final Year Earnings</label>
-        {{view Ember.TextField type='currency' value=fields.partner.final_year_earnings_cents }}
-      </div>
-      <div>
-        <label>SS Benefits?</label>
-        {{input type='checkbox' name='fields.partner.ss_currently_collecting'}}
-      </div>
-      <div>
-        <label>Social Security Benefits per month</label>
-        {{view Ember.TextField type='currency' value=fields.partner.ss_currently_collecting }}
-      </div>
+  <fieldset {{bind-attr class='partnerVisible:col-xs-6:hidden'}}>
+    <legend>Partner</legend>
+    <div>
+      <label>Name</label>
+      {{input value=fields.partner.name}}
     </div>
-    <a href="#" {{action "saveChanges"}} class="btn btn-success">Create</a>
+    <div>
+      <label>Birthdate</label>
+      {{view Ember.TextField type='date' value=fields.partner.date}}
+    </div>
+    <div>
+      <label>State</label>
+      {{view Ember.Select content=states 
+        optionValuePath="content.value" optionLabelPath="content.label" }}
+    </div>
+    <div>
+      <label>Current Yearly Earnings</label>
+      {{view Ember.TextField type='currency' value=fields.partner.current_earnings_cents }}
+    </div>
+    <div>
+      <label>Final Year Earnings</label>
+      {{view Ember.TextField type='currency' value=fields.partner.final_year_earnings_cents }}
+    </div>
+    <div>
+      <label>SS Benefits?</label>
+      {{input type='checkbox' name='fields.partner.ss_currently_collecting'}}
+    </div>
+    <div>
+      <label>Social Security Benefits per month</label>
+      {{view Ember.TextField type='currency' value=fields.partner.ss_currently_collecting }}
+    </div>
   </fieldset>
+  <a href="#" {{action "saveChanges"}} class="btn btn-success">Next</a>
 </form>
