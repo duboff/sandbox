@@ -1,0 +1,9 @@
+import Ember from 'ember';
+
+export default Ember.Controller.extend({
+  partnerVisible: false,
+
+  isPartnerVisible: function(key, value) {
+    console.log(value);
+  }.observes('partnerVisible')
+});

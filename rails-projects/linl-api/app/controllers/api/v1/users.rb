@@ -12,7 +12,7 @@ module API
           @user = User.where(id: permitted_params[:id]).first!
           present :user, @user, with: API::V1::Entities::UserEntity
           if @user.partner 
-            present :partner, @user.partner, with: API::V1::Entities::PartnerEntity
+            present :partner, [@user.partner], with: API::V1::Entities::PartnerEntity
           end
           if @user.children
             present :children, @user.children, with: API::V1::Entities::ChildEntity
@@ -20,6 +20,20 @@ module API
           if @user.residences
             present :residences, @user.residences, with: API::V1::Entities::ResidenceEntity
           end
+        end
+
+        desc "Create new user"
+        params do
+          #requires :email, type: String, desc: 'Email of the user'
+          #requires :password, type: String, desc: 'Password of the user'
+          #requires :password_confirmation, type: String, desc: 'Password Confirmation of the user'
+        end
+        post "" do
+          puts 'booger'
+          emai = params[:user][:email]
+          pass = params[:user][:password]
+          pass_conf = params[:user][:password_confirmation]
+          User.create({email: emai, password: pass, password_confirmation: pass_conf})
         end
       end
     end

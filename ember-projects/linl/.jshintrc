@@ -3,7 +3,8 @@
     "document": true,
     "window": true,
     "-Promise": true,
-    "LinlENV": true
+    "LinlENV": true,
+    "accounting": true
   },
   "browser" : true,
   "boss" : true,

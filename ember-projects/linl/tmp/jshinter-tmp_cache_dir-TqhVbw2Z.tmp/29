@@ -1,0 +1,4 @@
+module('JSHint - controllers/setup');
+test('controllers/setup/personal.js should pass jshint', function() { 
+  ok(false, 'controllers/setup/personal.js should pass jshint.\ncontrollers/setup/personal.js: line 17, col 35, \'value\' is defined but never used.\ncontrollers/setup/personal.js: line 17, col 30, \'key\' is defined but never used.\n\n2 errors'); 
+});

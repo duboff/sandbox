@@ -12,14 +12,13 @@ class User < ActiveRecord::Base
     "WI" => 50, "WY" => 51 }
 
   before_save :ensure_authentication_token
-  before_save { self.email = email.downcase }
+  #before_save { self.email = email.downcase }
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
     :recoverable, :rememberable, :trackable, :validatable
 
-  validates :email, uniqueness: true, presence: true
-  validates :first_name, length: { maximum: 50 }, presence: true
+  #validates :first_name, length: { maximum: 50 }, presence: true
   validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
   validates_length_of :password, within: 8..30
   has_one :partner, autosave:true, dependent: :destroy

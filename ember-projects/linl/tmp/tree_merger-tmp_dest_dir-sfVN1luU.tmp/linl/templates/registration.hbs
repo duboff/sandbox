@@ -1,0 +1,17 @@
+<form>
+  <fieldset>
+    <div>
+      <label>Email</label>
+      {{input value=fields.email}}
+    </div>
+    <div>
+      <label>Password</label>
+      {{input type='password' value=fields.password}}
+    </div>
+    <div>
+      <label>Password Confirmation</label>
+      {{input type='password' value=fields.password_confirmation}}
+    </div>
+    <a href="#" {{action "createUser"}} class="btn btn-success">Create</a>
+  </fieldset>
+</form>

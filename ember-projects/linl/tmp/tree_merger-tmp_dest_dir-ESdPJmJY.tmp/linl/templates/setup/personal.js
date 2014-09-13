@@ -1,0 +1,96 @@
+import Ember from 'ember';
+export default Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  var buffer = '', helper, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+
+
+  data.buffer.push("<form>\n  <fieldset>\n    <div>\n      <label>First Name</label>\n      ");
+  data.buffer.push(escapeExpression((helper = helpers.input || (depth0 && depth0.input),options={hash:{
+    'value': ("fields.first_name")
+  },hashTypes:{'value': "ID"},hashContexts:{'value': depth0},contexts:[],types:[],data:data},helper ? helper.call(depth0, options) : helperMissing.call(depth0, "input", options))));
+  data.buffer.push("\n    </div>\n    <div>\n      <label>Last Name</label>\n      ");
+  data.buffer.push(escapeExpression((helper = helpers.input || (depth0 && depth0.input),options={hash:{
+    'value': ("fields.last_name")
+  },hashTypes:{'value': "ID"},hashContexts:{'value': depth0},contexts:[],types:[],data:data},helper ? helper.call(depth0, options) : helperMissing.call(depth0, "input", options))));
+  data.buffer.push("\n    </div>\n    <div>\n      <label>Birthdate</label>\n      ");
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.TextField", {hash:{
+    'type': ("date"),
+    'value': ("fields.date")
+  },hashTypes:{'type': "STRING",'value': "ID"},hashContexts:{'type': depth0,'value': depth0},contexts:[depth0],types:["ID"],data:data})));
+  data.buffer.push("\n    </div>\n    <div>\n      <label>State</label>\n      ");
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.Select", {hash:{
+    'content': ("states"),
+    'optionValuePath': ("content.value"),
+    'optionLabelPath': ("content.label")
+  },hashTypes:{'content': "ID",'optionValuePath': "STRING",'optionLabelPath': "STRING"},hashContexts:{'content': depth0,'optionValuePath': depth0,'optionLabelPath': depth0},contexts:[depth0],types:["ID"],data:data})));
+  data.buffer.push("\n    </div>\n    <div>\n      <label>Current Yearly Earnings</label>\n      ");
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.TextField", {hash:{
+    'type': ("currency"),
+    'value': ("fields.current_earnings_cents")
+  },hashTypes:{'type': "STRING",'value': "ID"},hashContexts:{'type': depth0,'value': depth0},contexts:[depth0],types:["ID"],data:data})));
+  data.buffer.push("\n    </div>\n    <div>\n      <label>Final Year Earnings</label>\n      ");
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.TextField", {hash:{
+    'type': ("currency"),
+    'value': ("fields.final_year_earnings_cents")
+  },hashTypes:{'type': "STRING",'value': "ID"},hashContexts:{'type': depth0,'value': depth0},contexts:[depth0],types:["ID"],data:data})));
+  data.buffer.push("\n    </div>\n    <div>\n      <label>SS Benefits?</label>\n      ");
+  data.buffer.push(escapeExpression((helper = helpers.input || (depth0 && depth0.input),options={hash:{
+    'type': ("checkbox"),
+    'name': ("fields.ss_currently_collecting")
+  },hashTypes:{'type': "STRING",'name': "STRING"},hashContexts:{'type': depth0,'name': depth0},contexts:[],types:[],data:data},helper ? helper.call(depth0, options) : helperMissing.call(depth0, "input", options))));
+  data.buffer.push("\n    </div>\n    <div>\n      <label>Social Security Benefits per month</label>\n      ");
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.TextField", {hash:{
+    'type': ("currency"),
+    'value': ("fields.ss_currently_collecting")
+  },hashTypes:{'type': "STRING",'value': "ID"},hashContexts:{'type': depth0,'value': depth0},contexts:[depth0],types:["ID"],data:data})));
+  data.buffer.push("\n    </div>\n    <div>\n      <label>Married?</label>\n      ");
+  data.buffer.push(escapeExpression((helper = helpers.input || (depth0 && depth0.input),options={hash:{
+    'type': ("checkbox"),
+    'checked': ("changedManually")
+  },hashTypes:{'type': "STRING",'checked': "ID"},hashContexts:{'type': depth0,'checked': depth0},contexts:[],types:[],data:data},helper ? helper.call(depth0, options) : helperMissing.call(depth0, "input", options))));
+  data.buffer.push("\n    </div>\n  </fieldset>\n  <fieldset>\n    <div ");
+  data.buffer.push(escapeExpression(helpers['bind-attr'].call(depth0, {hash:{
+    'class': ("partnerVisible::hidden")
+  },hashTypes:{'class': "STRING"},hashContexts:{'class': depth0},contexts:[],types:[],data:data})));
+  data.buffer.push(">\n      <div>\n        <label>Name</label>\n        ");
+  data.buffer.push(escapeExpression((helper = helpers.input || (depth0 && depth0.input),options={hash:{
+    'value': ("fields.partner.name")
+  },hashTypes:{'value': "ID"},hashContexts:{'value': depth0},contexts:[],types:[],data:data},helper ? helper.call(depth0, options) : helperMissing.call(depth0, "input", options))));
+  data.buffer.push("\n      </div>\n      <div>\n        <label>Birthdate</label>\n        ");
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.TextField", {hash:{
+    'type': ("date"),
+    'value': ("fields.partner.date")
+  },hashTypes:{'type': "STRING",'value': "ID"},hashContexts:{'type': depth0,'value': depth0},contexts:[depth0],types:["ID"],data:data})));
+  data.buffer.push("\n      </div>\n      <div>\n        <label>State</label>\n        ");
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.Select", {hash:{
+    'content': ("states"),
+    'optionValuePath': ("content.value"),
+    'optionLabelPath': ("content.label")
+  },hashTypes:{'content': "ID",'optionValuePath': "STRING",'optionLabelPath': "STRING"},hashContexts:{'content': depth0,'optionValuePath': depth0,'optionLabelPath': depth0},contexts:[depth0],types:["ID"],data:data})));
+  data.buffer.push("\n      </div>\n      <div>\n        <label>Current Yearly Earnings</label>\n        ");
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.TextField", {hash:{
+    'type': ("currency"),
+    'value': ("fields.partner.current_earnings_cents")
+  },hashTypes:{'type': "STRING",'value': "ID"},hashContexts:{'type': depth0,'value': depth0},contexts:[depth0],types:["ID"],data:data})));
+  data.buffer.push("\n      </div>\n      <div>\n        <label>Final Year Earnings</label>\n        ");
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.TextField", {hash:{
+    'type': ("currency"),
+    'value': ("fields.partner.final_year_earnings_cents")
+  },hashTypes:{'type': "STRING",'value': "ID"},hashContexts:{'type': depth0,'value': depth0},contexts:[depth0],types:["ID"],data:data})));
+  data.buffer.push("\n      </div>\n      <div>\n        <label>SS Benefits?</label>\n        ");
+  data.buffer.push(escapeExpression((helper = helpers.input || (depth0 && depth0.input),options={hash:{
+    'type': ("checkbox"),
+    'name': ("fields.partner.ss_currently_collecting")
+  },hashTypes:{'type': "STRING",'name': "STRING"},hashContexts:{'type': depth0,'name': depth0},contexts:[],types:[],data:data},helper ? helper.call(depth0, options) : helperMissing.call(depth0, "input", options))));
+  data.buffer.push("\n      </div>\n      <div>\n        <label>Social Security Benefits per month</label>\n        ");
+  data.buffer.push(escapeExpression(helpers.view.call(depth0, "Ember.TextField", {hash:{
+    'type': ("currency"),
+    'value': ("fields.partner.ss_currently_collecting")
+  },hashTypes:{'type': "STRING",'value': "ID"},hashContexts:{'type': depth0,'value': depth0},contexts:[depth0],types:["ID"],data:data})));
+  data.buffer.push("\n      </div>\n    </div>\n    <a href=\"#\" ");
+  data.buffer.push(escapeExpression(helpers.action.call(depth0, "saveChanges", {hash:{},hashTypes:{},hashContexts:{},contexts:[depth0],types:["STRING"],data:data})));
+  data.buffer.push(" class=\"btn btn-success\">Create</a>\n  </fieldset>\n</form>\n");
+  return buffer;
+  
+});
