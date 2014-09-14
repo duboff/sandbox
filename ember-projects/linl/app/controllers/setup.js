@@ -10,7 +10,8 @@ export default Ember.ObjectController.extend({
       var curPath = this.get('curPath');
       var paths = this.get('formPath')(curPath);
       this.set('curPath', paths.next);
-      _this.transitionToRoute('setup.' + paths.next);
+      var nextPath = paths.next !== '' ? 'setup.'+paths.next : 'user';
+      _this.transitionToRoute(nextPath);
       this.get('model').save().then(function() {
         //_this.transitionToRoute('setup.' + paths.next);
       });
@@ -22,7 +23,10 @@ export default Ember.ObjectController.extend({
     var paths = { personal: {prev: 'personal', next: 'residence'},
                   residence: {prev: 'personal', next: 'children'},
                   children: {prev: 'residence', next: 'retirement'},
-                  retirement: {prev: 'children', next: 'assets'}
+                  retirement: {prev: 'children', next: 'assets'},
+                  assets: {prev: 'retirment', next: 'assumptions'},
+                  assumptions: {prev: 'assets', next: 'accounts'},
+                  accounts: {prev: 'assumptions', next: ''}
                 };
 
     return paths[curPath];
@@ -98,8 +102,34 @@ export default Ember.ObjectController.extend({
         updateRetirementView.call(this, true, false, false, false);
         break;
     }
-  }.observes('retirementAccount')
+  }.observes('retirementAccount'),
 
-
+  //assumptions
+  assumptions: ["Special Expense", "Tax Hike", "Inflation"],
+  assumptionType: "Special Expense",
+  isSpecial: true,
+  isTaxHike: false,
+  isInflation: false,
+  assumptionToggle: function(key, value) {
+    function toggleAssumption(isSpecial, isTaxHike, isInflation) {
+      this.set('isSpecial', isSpecial);
+      this.set('isTaxHike', isTaxHike);
+      this.set('isInflation', isInflation);
+    }
+    switch(this.get(value)) {
+      case 'Special Expense':
+        toggleAssumption.call(this, true, false, false);
+        break;
+      case 'Tax Hike':
+        toggleAssumption.call(this, false, true, false);
+        break;
+      case 'Inflation':
+        toggleAssumption.call(this, false, false, true);
+        break;
+      default:
+        toggleAssumption.call(this, true, false, false);
+        break;
+    }
+  }.observes('assumptionType')
 
 });

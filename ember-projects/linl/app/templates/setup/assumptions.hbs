@@ -1,0 +1,50 @@
+<form>
+  <label>Tax Hikes, Inflation, or Other Expenses?</label>
+  {{view Ember.Select content=assumptions selection=assumptionType}}
+  <fieldset>
+    <legend>{{controller.assumptionType}}</legend>
+    <div {{bind-attr class='isSpecial::hidden'}}>
+      <div>
+        <label>Name</label>
+        {{input value=fields.special_expense_name}}
+      </div>
+      <div>
+        <label>Start Date</label>
+        {{input type='date' value=fields.special_expense_start_date}}
+      </div>
+      <div>
+        <label>End Date</label>
+        {{input type='date' value=fields.special_expense_end_date}}
+      </div>
+      <div>
+        <label>Annual Expense</label>
+        {{input type='currency' value=fields.special_expense_annual_expense_cents}}
+      </div>
+    </div>
+    <div {{bind-attr class='isTaxHike::hidden'}}>
+      <div>
+        <label>Start Date</label>
+        {{input type='date' value=fields.tax_hike_start_date}}
+      </div>
+      <div>
+        <label>Percentage</label>
+        {{input type='percentage' value=fields.tax_hike_percentage}}
+      </div>
+    </div>
+    <div {{bind-attr class='isInflation::hidden'}}>
+      <div>
+        <label>Start Date</label>
+        {{input type='date' value=fields.inflation_start_date}}
+      </div>
+      <div>
+        <label>Current Percentage</label>
+        {{input type='percentage' value=fields.inflation_current_percentage}}
+      </div>
+      <div>
+        <label>Future Percentage</label>
+        {{input type='percentage' value=fields.inflation_future_percentage}}
+      </div>
+    </div>
+  </fieldset>
+  <a href="#" {{action "saveChangesTransition"}} class="btn btn-success">Next</a>
+</form>

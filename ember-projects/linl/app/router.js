@@ -11,6 +11,7 @@ Router.map(function() {
       this.route('residence');
       this.route('children');
       this.route('retirement');
+      this.route('assets');
       this.route('assumptions');
       this.route('accounts');
     });
