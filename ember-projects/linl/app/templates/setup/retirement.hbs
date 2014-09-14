@@ -3,107 +3,203 @@
     <legend>You</legend>
     <div>
       <label>Year to retire</label>
-      {{view Ember.Select content=ageRange value=fields.retirement_age}}
+      {{view Ember.Select content=hundredYears value=fields.retirement_age}}
     </div>
     <div>
       <label>Final Year Earnings</label>
       {{view Ember.TextField type='currency' value=fields.final_year_earnings_cents placeholder=0}}
     </div>
+    {{#each acct in retirement_accounts}}
+      {{acct.name}}
+    {{/each}}
     <div>
-      <label>Retirement Accounts?</label>
-      {{view Ember.Checkbox checked=retirementAccountToggle}}
+      <label>Pension/401k/Social Security?</label>
+      {{view Ember.Select content=retirementAccounts selection=retirementAccount}}
     </div>
-    <div {{bind-attr class='retirementAccountVisible::hidden'}}>
-      <label>Type of account</label>
-      {{view Ember.Select content=iras selection=selectedIra}}
-      <div {{bind-attr class='rothVisible:hidden:'}}>
+    <fieldset>
+      <legend>{{controller.retirementAccount}}</legend>
+      <div {{bind-attr class='isPension::hidden'}}>
         <div>
-          <label>Total tax-deductible 401k assets</label>
-          {{view Ember.TextField type='currency' value=fields.retirement_account_total_cents placeholder=0}}
+          <label>Initial Annual Pension</label>
+          {{view Ember.TextField type='currency' value=fields.annual_pension_cents placeholder=0}}
         </div>
         <div>
-          <label>Your contributions</label>
-          {{view Ember.TextField type='currency' value=fields.retirement_account_contributions_cents placeholder=0}}
-        </div>
-        <div>
-          <label>Employer contributions</label>
-          {{view Ember.TextField type='currency' value=fields.retirement_account_employer_contributions_cents placeholder=0}}
+          <label>Pension Start Age</label>
+          {{view Ember.Select content=hundredYears value=fields.pension_start_age}}
         </div>
       </div>
-      <div {{bind-attr class='rothVisible::hidden'}}>
-        <div>
-          <label>Total Roth assets</label>
-          {{view Ember.TextField type='currency' value=fields.retirement_account_total_cents placeholder=0}}
+      <div {{bind-attr class='isIRA::hidden'}}>
+        <div {{bind-attr class='isRoth:hidden:'}}>
+          <div>
+            <label>Total tax-deductible 401k assets</label>
+            {{view Ember.TextField type='currency' value=fields.retirement_account_total_cents placeholder=0}}
+          </div>
+          <div>
+            <label>Your contributions</label>
+            {{view Ember.TextField type='currency' value=fields.retirement_account_contributions_cents placeholder=0}}
+          </div>
+          <div>
+            <label>Employer contributions</label>
+            {{view Ember.TextField type='currency' value=fields.retirement_account_employer_contributions_cents placeholder=0}}
+          </div>
+        </div>
+        <div {{bind-attr class='isRoth::hidden'}}>
+          <div>
+            <label>Total Roth assets</label>
+            {{view Ember.TextField type='currency' value=fields.retirement_account_total_cents placeholder=0}}
+          </div>
+          <div>
+            <label>Contributions</label>
+            {{view Ember.TextField type='currency' value=fields.retirement_account_contributions_cents placeholder=0}}
+          </div>
         </div>
         <div>
-          <label>Contributions</label>
-          {{view Ember.TextField type='currency' value=fields.retirement_account_contributions_cents placeholder=0}}
+          <label>Age you start to withdraw</label>
+          {{view Ember.Select content=hundredYears value=fields.retirement_account_withdrawal_start}}
+          <label>Age you stop withdrawal</label>
+          {{view Ember.Select content=hundredYears value=fields.retirement_account_withdrawal_end}}
+        </div>
+        <div>
+          <label>Withdraw roths first or last</label>
+          {{view Ember.Select content=order}}
         </div>
       </div>
-      <div>
-        <label>Age you start to withdraw</label>
-        {{view Ember.Select content=ageRange value=fields.retirement_account_withdrawal_start}}
-        <label>Age you stop withdrawal</label>
-        {{view Ember.Select content=ageRange value=fields.retirement_account_withdrawal_end}}
+      <div {{bind-attr class='isSS::hidden'}}>
+        <label>Currently Collecting?</label>
+        {{view Ember.Checkbox checked=collecting}} 
+        <div {{bind-attr class='collecting::hidden'}}>
+          <div>
+            <label>Monthly Benefit</label>
+            {{view Ember.TextField type='currency' value=fields.ss_monthly_benefits_cents placeholder=0}}
+          </div>
+        </div>
+        <div {{bind-attr class='collecting:hidden:'}}>
+          <div>
+            <label>Age you start collecting</label>
+            {{view Ember.Select content=hundredYears }}
+          </div>
+          <div>
+            <label>Estimated Monthly Benefit</label>
+            {{view Ember.TextField type='currency' value=fields.ss_monthly_benefits_cents placeholder=0}}
+          </div>
+        </div>
+        <label>Benefits Cut?</label>
+        {{view Ember.Checkbox checked=benefitsCut}} 
+        <div {{bind-attr class='benefitsCut:hidden:'}}>
+          <div>
+            <label>Start Date</label>
+            {{input type='date' value=fields.ss_benefits_cut_start_year}}
+          </div>
+          <div>
+            <label>Cut Percentage</label>
+            {{input type='percentage' value=fields.ss_benefits_cut_percentage}}
+          </div>
+        </div>
       </div>
-      <div>
-        <label>Withdraw roths first or last</label>
-        {{view Ember.Select content=order}}
-      </div>
-    </div>
+    </fieldset>
+    <a href="#" {{action "saveChanges"}} class="btn btn-success">Add Account</a>
   </fieldset>
   <fieldset {{bind-attr class='partnerVisible:col-xs-6:hidden'}}>
-    <legend>Partner/Spouse</legend>
+    <legend>{{controller.partner_status}}</legend>
     <div>
       <label>Year to retire</label>
-      {{view Ember.Select content=ageRange}}
+      {{view Ember.Select content=hundredYears}}
     </div>
     <div>
       <label>Final Year Earnings</label>
       {{view Ember.TextField type='currency' value=fields.partner.final_year_earnings_cents placeholder=0}}
     </div>
-    <div {{bind-attr class='retirementAccountVisible::hidden'}}>
-      <label>Retirement Accounts?</label>
-      {{view Ember.Checkbox checked=retirementAccountToggle}}
+    {{#if partner}}
+      {{#each acct in partner.retirement_accounts}}
+        {{acct.name}}
+      {{/each}}
+    {{/if}}
+    <div>
+      <label>Pension/401k/Social Security?</label>
+      {{view Ember.Select content=retirementAccounts selection=retirementAccount}}
     </div>
-    <div {{bind-attr class='retirementAccountVisible::hidden'}}>
-      <label>Type of account</label>
-      {{view Ember.Select content=iras selection=selectedIra}}
-      <div {{bind-attr class='rothVisible:hidden:'}}>
+    <fieldset>
+      <legend>{{controller.retirementAccount}}</legend>
+      <div {{bind-attr class='isPension::hidden'}}>
         <div>
-          <label>Total tax-deductible 401k assets</label>
-          {{view Ember.TextField type='currency' value=fields.partner.retirement_account_total_cents placeholder=0}}
+          <label>Initial Annual Pension</label>
+          {{view Ember.TextField type='currency' value=fields.partner.annual_pension_cents placeholder=0}}
         </div>
         <div>
-          <label>Your contributions</label>
-          {{view Ember.TextField type='currency' value=fields.partner.retirement_account_contributions_cents placeholder=0}}
-        </div>
-        <div>
-          <label>Employer contributions</label>
-          {{view Ember.TextField type='currency' value=fields.partner.retirement_account_employer_contributions_cents placeholder=0}}
+          <label>Pension Start Age</label>
+          {{view Ember.Select content=hundredYears value=fields.partner.pension_start_age}}
         </div>
       </div>
-      <div {{bind-attr class='rothVisible::hidden'}}>
-        <div>
-          <label>Total Roth assets</label>
-          {{view Ember.TextField type='currency' value=fields.partner.retirement_account_total_cents placeholder=0}}
+      <div {{bind-attr class='isIRA::hidden'}}>
+        <div {{bind-attr class='isRoth:hidden:'}}>
+          <div>
+            <label>Total tax-deductible 401k assets</label>
+            {{view Ember.TextField type='currency' value=fields.partner.retirement_account_total_cents placeholder=0}}
+          </div>
+          <div>
+            <label>Your contributions</label>
+            {{view Ember.TextField type='currency' value=fields.partner.retirement_account_contributions_cents placeholder=0}}
+          </div>
+          <div>
+            <label>Employer contributions</label>
+            {{view Ember.TextField type='currency' value=fields.partner.retirement_account_employer_contributions_cents placeholder=0}}
+          </div>
+        </div>
+        <div {{bind-attr class='isRoth::hidden'}}>
+          <div>
+            <label>Total Roth assets</label>
+            {{view Ember.TextField type='currency' value=fields.partner.retirement_account_total_cents placeholder=0}}
+          </div>
+          <div>
+            <label>Contributions</label>
+            {{view Ember.TextField type='currency' value=fields.partner.retirement_account_contributions_cents placeholder=0}}
+          </div>
         </div>
         <div>
-          <label>Contributions</label>
-          {{view Ember.TextField type='currency' value=fields.partner.retirement_account_contributions_cents placeholder=0}}
+          <label>Age you start to withdraw</label>
+          {{view Ember.Select content=hundredYears value=fields.partner.retirement_account_withdrawal_start}}
+          <label>Age you stop withdrawal</label>
+          {{view Ember.Select content=hundredYears value=fields.partner.retirement_account_withdrawal_end}}
+        </div>
+        <div>
+          <label>Withdraw roths first or last</label>
+          {{view Ember.Select content=order}}
         </div>
       </div>
-      <div>
-        <label>Age you start to withdraw</label>
-        {{view Ember.Select content=ageRange value=fields.partner.retirement_account_withdrawal_start}}
-        <label>Age you stop withdrawal</label>
-        {{view Ember.Select content=ageRange value=fields.partner.retirement_account_withdrawal_end}}
+      <div {{bind-attr class='isSS::hidden'}}>
+        <label>Currently Collecting?</label>
+        {{view Ember.Checkbox checked=collecting}} 
+        <div {{bind-attr class='collecting::hidden'}}>
+          <div>
+            <label>Monthly Benefit</label>
+            {{view Ember.TextField type='currency' value=fields.partner.ss_monthly_benefits_cents placeholder=0}}
+          </div>
+        </div>
+        <div {{bind-attr class='collecting:hidden:'}}>
+          <div>
+            <label>Age you start collecting</label>
+            {{view Ember.Select content=hundredYears }}
+          </div>
+          <div>
+            <label>Estimated Monthly Benefit</label>
+            {{view Ember.TextField type='currency' value=fields.partner.ss_monthly_benefits_cents placeholder=0}}
+          </div>
+        </div>
+        <label>Benefits Cut?</label>
+        {{view Ember.Checkbox checked=benefitsCut}} 
+        <div {{bind-attr class='benefitsCut:hidden:'}}>
+          <div>
+            <label>Start Date</label>
+            {{input type='date' value=fields.partner.ss_benefits_cut_start_year}}
+          </div>
+          <div>
+            <label>Cut Percentage</label>
+            {{input type='percentage' value=fields.partner.ss_benefits_cut_percentage}}
+          </div>
+        </div>
       </div>
-      <div>
-        <label>Withdraw roths first or last</label>
-        {{view Ember.Select content=order}}
-      </div>
-    </div>
+    </fieldset>
+    <a href="#" {{action "saveChanges"}} class="btn btn-success">Add Account</a>
   </fieldset>
   <a href="#" {{action "saveChangesTransition"}} class="btn btn-success">Next</a>
 </form>

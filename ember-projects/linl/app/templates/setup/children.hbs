@@ -1,6 +1,6 @@
 <div {{bind-attr class='childVisible:hidden'}}>
   <label>Do you have any children?</label>
-  {{input type='checkbox' checked=childToggle}}
+  {{input type='checkbox' checked=childVisible}}
 </div>
 <form {{bind-attr class='childVisible::hidden'}}>
   <fieldset>
@@ -29,6 +29,6 @@
       {{input type='currency' value=fields.child.expected_tuition}}
     </div>
     <a href="#" {{action "saveChanges"}} class="btn btn-success">Add Child</a>
-    <a href="#" {{action "saveChangesTransition"}} class="btn btn-success">Next</a>
   </fieldset>
+  <a href="#" {{action "saveChangesTransition"}} class="btn btn-success">Next</a>
 </form>

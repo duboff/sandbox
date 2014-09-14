@@ -1,0 +1,69 @@
+<form>
+  <fieldset>
+    <legend>Residence</legend>
+    {{#each res in residences}}
+      {{res.name}}
+    {{/each}}
+    <div>
+      <label>Rent or Own?</label>
+      {{view Ember.Select content=residence_types selection=residence_type}}
+    </div>
+    <fieldset>
+      <legend>{{residence_type}}</legend>
+      <div {{bind-attr class='own::hidden'}}>
+        <div>
+          <label>Name</label>
+          {{input value=fields.residence.name}}
+        </div>
+        <div>
+          <label>Current Value</label>
+          {{input type='currency' value=fields.residence.current_value_cents}}
+        </div>
+        <div>
+          <label>Mortgage Balance</label>
+          {{input type='currency' value=fields.residence.mortgage_balance_cents}}
+        </div>
+        <div>
+          <label>Monthly Payment</label>
+          {{input type='currency' value=fields.residence.monthly_payment_cents}}
+        </div>
+        <div>
+          <label>Average Utilities per month</label>
+          {{input type='currency' value=fields.residence.utilities_cents}}
+        </div>
+        <div>
+          <label>Years Remaining</label>
+          {{view Ember.Select content=hundredYears}}
+        </div>
+        <div>
+          <label>Annual Property Tax</label>
+          {{input type='currency' value=fields.residence.annual_property_tax_cents}}
+        </div>
+        <div>
+          <label>Annual Homeowner's Insurance</label>
+          {{input type='currency' value=fields.residence.annual_insurance_cents}}
+        </div>
+        <div>
+          <label>Misc. Annual Expenses</label>
+          {{input type='currency' value=fields.residence.misc_annual_cents}}
+        </div>
+      </div>
+      <div {{bind-attr class='own:hidden:'}}>
+        <div>
+          <label>Name</label>
+          {{input value=fields.residence.name}}
+        </div>
+        <div>
+          <label>Average Utilities per month</label>
+          {{input type='currency' value=fields.residence.utilities_cents}}
+        </div>
+        <div>
+          <label>Misc. Annual Expenses</label>
+          {{input type='currency' value=fields.residence.misc_annual_cents}}
+        </div>
+      </div>
+      <a href="#" {{action "saveChanges"}} class="btn btn-success">Add Residence</a>
+    </fieldset>
+    <a href="#" {{action "saveChangesTransition"}} class="btn btn-success">Next</a>
+  </fieldset>
+</form>
