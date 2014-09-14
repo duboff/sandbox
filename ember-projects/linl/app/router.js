@@ -9,7 +9,7 @@ Router.map(function() {
     this.resource('setup', function() {
       this.route('personal');
       this.route('children');
-      this.route('accounts');
+      this.route('retirement');
     });
     this.route('protected');
   });
