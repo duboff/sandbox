@@ -1,0 +1,91 @@
+Assets 
+  User
+    reserve_fund_rate_of_return
+    reserve_fund_initial_amount
+    reserve_fund_final_amount
+    reserve_fund_accumulate_by_age
+    regular_asset_rate_of_return
+    regular_assets_total_amount
+    other_income_name
+    other_income_start_date
+    other_income_end_date
+    other_income_total_amount
+    owner_id
+
+Assumptions
+  User
+    special_expense_name
+    special_expense_start_date
+    special_expense_end_date
+    special_expense_annual_expense_cents
+    tax_hike_start_date
+    tax_hike_percentage
+    inflation_start_date
+    inflation_current_percentage
+    inflation_future_percentage
+
+Children
+  Child
+    name
+    birthdate
+    college_entry
+    college_exit
+    expected_tuition
+
+Personal
+  User
+    *check how state is being stored
+    current_earnings_cents
+    partner_status(important?)
+  
+  Partner
+    name
+    birth_date
+    *check states
+    current_earnings_cents
+
+Residence
+  *residence_type - may need to generate
+  Residence
+    name
+    current_value_cents
+    mortgage_balance_cents
+    monthly_payment_cents
+    utilities_cents
+    years_remaining
+    annual_property_tax_cents
+    annual_insurance_cents
+    misc_annual_cents
+
+Retirement
+  *retirement_account_type
+  User
+    retirement_age
+    final_year_earnings_cents
+    annual_pension_cents
+    pension_start_age
+    retirement_account_total_cents
+    retirement_account_contributions_cents
+    retirement_account_employer_contributions_cents
+    retirement_account_withdrawal_start
+    retirement_account_withdrawal_end
+    withdrawal_order
+    *ss_currently_collecting
+    ss_monthly_benefits_cents
+    ss_collecting_start
+    ss_monthly_benefits_cents
+    ss_benefits_cut_start
+    ss_benefits_cut_percentage
+    owner_id
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+User
+  birth_date
+  *check how state is being stored
+  current_earnings_cents
+  final_year_earnings
+  partner_status(important?)
+
+Partner
+  name
+  birth_date
+  *check states
+  current_earnings_cents
+  final_year_earnings
+
+Child
+  name
+  birthdate
+  college_entry_date
+  college_exit_date
+  expected_tuition_cents
+
+Residence
+  *own - check residence typ
+  name
+  current_value_cents
+  mortgage_balance_cents
+  monthly_payment_cents
+  utilities_cents
+  years_remaining
+  annual_property_tax_cents
+  annual_insurance_cents
+  misc_annual_cents
+
+Asset_Relationship
+  owner_id
+  owner_type - user, partner, spouse
+  asset_id
+  asset_type - reserve, regular, income
+
+Asset
+  name
+  rate_of_return
+  initial_amount - same as total_amount
+  final_amount_cents
+  start_date
+  end_date - also used in accumulate by age
+
+Assumption_Relationship
+  owner_id
+  owner_type - user, partner, spouse
+  assumption_id
+  assumption_type - special, tax, inflation, cut
+
+Assumption
+  name
+  start_date
+  end_date
+  current_percentage
+  future_percentage - used for tax_hike_percentage, benefits_cut_percentage
+  monthly_cents - mult by 12 for annual_special_expense
+
+Retirement_Relationship
+  owner_id
+  owner_type - user, partner, spouse
+  retirement_id
+  retirement_type - pension, ira, ss
+
+Retirement
+  name
+  start_date - pension start and retirement age, benefits start date, withdrawal_start, blank for not currently collecting ss
+  end_date
+  roth_first
+  monthly_amount_cents - multiply by 12 for annual_pension
+  total_amount_cents
+  contributions_cents
+  employer_contributions_cents
+  
+

@@ -50,58 +50,7 @@
         {{input type='currency' value=fields.other_income_total_amount}}
       </div>
     </fieldset>
-  </fieldset>
-  <fieldset {{bind-attr class='partnerVisible:col-xs-6:hidden'}}>
-    <legend>{{controller.partner_status}}</legend>
-    <fieldset>
-      <legend>Reserve Fund</legend>
-      <div>
-        <label>Rate of Return</label>
-        {{input type='percentage' value=fields.partner.reserve_fund_rate_of_return}}
-      </div>
-      <div>
-        <label>Start Amount</label>
-        {{input type='currency' value=fields.partner.reserve_fund_initial_amount}}
-      </div>
-      <div>
-        <label>Final Amount</label>
-        {{input type='currency' value=fields.partner.reserve_fund_final_amount}}
-      </div>
-      <div>
-        <label>Accumulate by Age</label>
-        {{view Ember.Select content=hundredYears value=fields.partner.reserve_fund_accumulate_by_age}}
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend>Regular Assets</legend>
-      <div>
-        <label>Rate of Return</label>
-        {{input type='percentage' value=fields.partner.regular_asset_rate_of_return}}
-      </div>
-      <div>
-        <label>Total Amount</label>
-        {{input type='currency' value=fields.partner.regular_assets_total_amount}}
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend>Other Income</legend>
-      <div>
-        <label>Name</label>
-        {{input value=fields.partner.other_income_name}}
-      </div>
-      <div>
-        <label>Start date</label>
-        {{input type='date' value=fields.partner.other_income_start_date}}
-      </div>
-      <div>
-        <label>End date</label>
-        {{input type='date' value=fields.partner.other_income_end_date}}
-      </div>
-      <div>
-        <label>Total Amount</label>
-        {{input type='currency' value=fields.partner.other_income_total_amount}}
-      </div>
-    </fieldset>
+    {{view Ember.Select content=possible_owners selection=owner_id}}
   </fieldset>
   <a href="#" {{action "saveChangesTransition"}} class="btn btn-success">Next</a>
 </form>
