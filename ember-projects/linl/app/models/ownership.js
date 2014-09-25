@@ -1,6 +1,6 @@
-import Ember from 'ember';
+import DS from 'ember-data';
 
-export default Ember.Model.extend({
+export default DS.Model.extend({
   user: DS.belongsTo('user', {asynch: true}),
   partner: DS.belongsTo('partner', {asynch: true}),
   asset: DS.belongsTo('asset', {asynch: true}),
