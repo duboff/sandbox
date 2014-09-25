@@ -10,7 +10,7 @@ export default DS.Model.extend({
   created_at: DS.attr('date'),
   updated_at: DS.attr('date'),
 
-  ownerships: DS.hasMany('ownership'),
+  ownerships: DS.hasMany('ownership', {asynch: true}),
 
   reserve_funds: function() {
     return this.get('ownerships').then(function(ownerships) {
