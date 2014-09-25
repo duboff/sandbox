@@ -8,18 +8,8 @@ export default DS.Model.extend({
   final_amount_cents: DS.attr('number'),
   start_date: DS.attr('date'),
   end_date: DS.attr('date'),
+  user_owned: DS.attr('boolean'),
 
-  ownerships: DS.hasMany('ownership'),
+  user: DS.belongsTo('user')
 
-  users: function(){
-    return this.get('ownerships').then(function(ownerships){
-      return ownerships.mapBy('user');
-    });
-  }.property('ownerships.@each.user'),
-
-  partners: function(){
-    return this.get('ownerships').then(function(ownerships){
-      return ownerships.mapBy('partner');
-    });
-  }.property('ownerships.@each.partner')
 });

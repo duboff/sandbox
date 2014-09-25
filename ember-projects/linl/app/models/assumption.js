@@ -8,19 +8,9 @@ export default DS.model.extend({
   current_percentage: DS.attr('number'),
   future_percentage: DS.attr('number'),
   monthly_cents: DS.attr('number'),
+  user_owned: DS.attr('boolean'),
 
-  ownerships: DS.hasMany('ownership'),
 
-  users: function() {
-    return this.get('ownerships').then(function(ownerships){
-      return ownerships.mapBy('user');
-    });
-  }.property('ownerships.@each.user'),
-
-  partners: function() {
-    return this.get('ownerships').then(function(ownerships){
-      return ownerships.mapBy('partner');
-    });
-  }.property('ownerships.@each.partner')
+  user: DS.belongsTo('user')
 
 });
