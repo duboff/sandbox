@@ -11,8 +11,8 @@ export default DS.Model.extend({
   password_confirmation: DS.attr('string'),
   birthdate: DS.attr('date'),
   state: DS.attr('string'),
-  current_earnings_cents: DS.attr('number', {defaultValue: 0}),
-  final_year_earnings_cents: DS.attr('number', {defaultValue: 0}),
+  current_earnings_cents: DS.attr('number'),
+  final_year_earnings_cents: DS.attr('number'),
   created_at: DS.attr('date'),
   updated_at: DS.attr('date'),
 
