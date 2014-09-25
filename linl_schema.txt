@@ -1,26 +1,27 @@
-User
-  birth_date
-  *check how state is being stored
+User 
+  birthdate
+  state
   current_earnings_cents
-  final_year_earnings
-  partner_status(important?)
+  final_year_earnings_cents
+  marital_status
+  ss_currently_collecting
+  roth_first 
 
 Partner
   name
-  birth_date
-  *check states
+  birthdate
+  states
   current_earnings_cents
-  final_year_earnings
+  final_year_earnings_cents
+  ss_currently_collecting
+  roth_first
 
-Child
+Child 
   name
   birthdate
-  college_entry_date
-  college_exit_date
   expected_tuition_cents
 
 Residence
-  *own - check residence typ
   name
   current_value_cents
   mortgage_balance_cents
@@ -31,48 +32,38 @@ Residence
   annual_insurance_cents
   misc_annual_cents
 
-Asset_Relationship
-  owner_id
-  owner_type - user, partner, spouse
-  asset_id
-  asset_type - reserve, regular, income
-
 Asset
+  user_id
   name
+  item_type - reserve, regular, income
   rate_of_return
-  initial_amount - same as total_amount
+  initial_amount_cents - same as total_amount
   final_amount_cents
   start_date
   end_date - also used in accumulate by age
-
-Assumption_Relationship
-  owner_id
-  owner_type - user, partner, spouse
-  assumption_id
-  assumption_type - special, tax, inflation, cut
+  user_owned
 
 Assumption
+  user_id
   name
-  start_date
-  end_date
+  item_type - special, tax, inflation, cut
   current_percentage
   future_percentage - used for tax_hike_percentage, benefits_cut_percentage
   monthly_cents - mult by 12 for annual_special_expense
-
-Retirement_Relationship
-  owner_id
-  owner_type - user, partner, spouse
-  retirement_id
-  retirement_type - pension, ira, ss
+  start_date
+  end_date
+  user_owned
 
 Retirement
+  user_id
   name
-  start_date - pension start and retirement age, benefits start date, withdrawal_start, blank for not currently collecting ss
-  end_date
-  roth_first
-  monthly_amount_cents - multiply by 12 for annual_pension
+  item_type - pension, roth, ira, ss
+  monthly_cents - multiply by 12 for annual_pension
   total_amount_cents
   contributions_cents
   employer_contributions_cents
+  start_date - pension start and retirement age, benefits start date, withdrawal_start, blank for not currently collecting ss
+  end_date
+  user_owned
   
 

@@ -11,7 +11,7 @@ export default DS.Model.extend({
   years_remaining: DS.attr('number'),
   annual_property_tax_cents: DS.attr('number'),
   annual_insurance_cents: DS.attr('number'),
-  misc_annual_cents: DS.attr('number'),
+  misc_annual_expenses_cents: DS.attr('number'),
   created_at: DS.attr('date'),
   updated_at: DS.attr('date')
 });
