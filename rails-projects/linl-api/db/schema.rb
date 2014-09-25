@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140925181503) do
+ActiveRecord::Schema.define(version: 20140925183040) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -120,6 +120,7 @@ ActiveRecord::Schema.define(version: 20140925181503) do
     t.datetime "updated_at"
     t.integer  "annual_property_tax_cents",  limit: 8
     t.integer  "annual_insurance_cents",     limit: 8
+    t.boolean  "owned"
   end
 
   add_index "residences", ["user_id"], name: "index_residences_on_user_id", using: :btree
