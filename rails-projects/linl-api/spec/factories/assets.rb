@@ -2,14 +2,31 @@
 
 FactoryGirl.define do
   factory :asset do
-    user_id 1
-    name "MyString"
-    item_type "MyString"
-    rate_of_return 1
-    initial_amount_cents 1
-    final_amount_cents 1
-    start_date "2014-09-25 13:50:49"
-    end_date "2014-09-25 13:50:49"
-    user_owned ""
+    name { Faker::Company.name }
+    item_type "reserve"
+    rate_of_return 0
+    initial_amount_cents 0
+    final_amount_cents 0
+    start_date ""
+    end_date ""
+    user_owned { true }
+
+    factory :reserve do
+      item_type "reserve"
+      rate_of_return { rand(100) }
+      initial_amount_cents { rand(100000000000) }
+      final_amount_cents { |u| rand(u.initial_amount_cents + 10000000000) }
+    end
+
+    factory :regular do
+      item_type "regular"
+      rate_of_return { rand(100) }
+      initial_amount_cents { rand(100000000000) }
+    end
+
+    factory :income do
+      item_type "income"
+      initial_amount_cents { rand(100000000000) }
+    end
   end
 end

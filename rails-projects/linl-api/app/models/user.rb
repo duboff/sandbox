@@ -1,7 +1,6 @@
 class User < ActiveRecord::Base
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(?:\.[a-z\d\-]+)*\.[a-z]+\z/i
-  MARITAL_STATUSES = %w[single married partner]
 
   # matches values in ESPlanner
   STATES = { "AL" =>  1, "AK" =>  2, "AZ" =>  3, "AR" =>  4, "CA" =>  5, "CO" =>  6, "CT" =>  7, "DE" =>  8, "DC" =>  9,
