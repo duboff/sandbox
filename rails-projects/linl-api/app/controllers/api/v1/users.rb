@@ -20,6 +20,15 @@ module API
           if @user.residences
             present :residences, @user.residences, with: API::V1::Entities::ResidenceEntity
           end
+          if @user.assets
+            present :assets, @user.assets, with: API::V1::Entities::AssetEntity
+          end
+          if @user.assumptions
+            present :assumptions, @user.residences, with: API::V1::Entities::AssumptionEntity
+          end
+          if @user.retirements
+            present :retirements, @user.retirements, with: API::V1::Entities::RetirementEntity
+          end
         end
 
         desc "Create new user"
