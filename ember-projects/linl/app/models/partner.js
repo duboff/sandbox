@@ -2,6 +2,7 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   user: DS.belongsTo('user'),
+
   name: DS.attr('string'),
   birthdate: DS.attr('date'),
   state: DS.attr('string'),
@@ -9,8 +10,8 @@ export default DS.Model.extend({
   final_year_earnings_cents: DS.attr('number'),
   ss_currently_collecting: DS.attr('boolean'),
   roth_first: DS.attr('boolean'),
+  retirement_age: DS.attr('date'),
   created_at: DS.attr('date'),
   updated_at: DS.attr('date')
-
 });
 

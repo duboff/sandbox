@@ -1,25 +1,30 @@
 User 
   birthdate
+  marital_status
   state
   current_earnings_cents
   final_year_earnings_cents
   marital_status
   ss_currently_collecting
+  retirement_age
   roth_first 
 
 Partner
   name
   birthdate
-  states
+  state
   current_earnings_cents
   final_year_earnings_cents
   ss_currently_collecting
+  retirement_age
   roth_first
 
 Child 
   name
   birthdate
   expected_tuition_cents
+  college_entry_date
+  college_exit_date
 
 Residence
   name
@@ -30,7 +35,8 @@ Residence
   years_remaining
   annual_property_tax_cents
   annual_insurance_cents
-  misc_annual_cents
+  misc_annual_expenses_cents
+  owned
 
 Asset
   user_id
@@ -62,7 +68,7 @@ Retirement
   total_amount_cents
   contributions_cents
   employer_contributions_cents
-  start_date - pension start and retirement age, benefits start date, withdrawal_start, blank for not currently collecting ss
+  start_date - pension start,  benefits start date, withdrawal_start, blank for not currently collecting ss
   end_date
   user_owned
   
