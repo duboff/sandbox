@@ -5,7 +5,6 @@ FactoryGirl.define do
     name { Faker::Name.name }
     birthdate { rand(100.year.ago..Time.now).to_datetime }
     state { User::STATES.keys.sample }
-    marital_status { [true, false].sample }
     ss_currently_collecting { [true, false].sample }
     current_earnings_cents  { rand(100000000) }
     final_year_earnings_cents { rand(100000000) }

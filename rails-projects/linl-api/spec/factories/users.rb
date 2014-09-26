@@ -10,6 +10,7 @@ FactoryGirl.define do
     birthdate { rand(100.year.ago..Time.now).to_datetime }
     state { User::STATES.keys.sample }
     ss_currently_collecting { [true, false].sample }
+    marital_status { [true, false].sample }
     current_earnings_cents  { rand(100000000) }
     final_year_earnings_cents { rand(100000000) }
     retirement_date { |u| rand((u.birthdate+40.years)..(u.birthdate+80.years)) }
