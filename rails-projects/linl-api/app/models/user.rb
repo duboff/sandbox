@@ -26,16 +26,18 @@ class User < ActiveRecord::Base
   accepts_nested_attributes_for :children
   has_many :residences, autosave:true, dependent: :destroy
   accepts_nested_attributes_for :residences
+  has_many :assets, autosave:true, dependent: :destroy
+  accepts_nested_attributes_for :assets
+  has_many :assumptions, autosave:true, dependent: :destroy
+  accepts_nested_attributes_for :assumptions
+  has_many :retirements, autosave:true, dependent: :destroy
+  accepts_nested_attributes_for :retirements
 
 
   def ensure_authentication_token
     if authentication_token.blank?
       self.authentication_token = generate_authentication_token
     end
-  end
-
-  def self.marital_status_options
-    MARITAL_STATUSES.map{ |s| [s.titleize, s] }
   end
 
   def self.state_options
