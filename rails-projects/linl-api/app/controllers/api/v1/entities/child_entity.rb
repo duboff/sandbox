@@ -3,7 +3,8 @@ module API
     module Entities
       class ChildEntity < Grape::Entity
         expose :id, :user_id, :name, :birthdate, :expected_tuition_cents, 
-          :college_entry_date, :college_exit_date, :created_at, :updated_at
+          :college_entry_date, :college_exit_date, :created_at, :updated_at,
+          :expected_tuition_cents
       end
     end
   end
