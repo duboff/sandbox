@@ -11,7 +11,7 @@ export default DS.Model.extend({
   first_name: DS.attr('string'),
   last_name: DS.attr('string'),
   email: DS.attr('string'),
-  marital_status: DS.attr('boolean'),
+  marital_status: DS.attr('boolean', {defaultValue: false}),
   password: DS.attr('string'),
   password_confirmation: DS.attr('string'),
   birthdate: DS.attr('date'),
@@ -20,7 +20,7 @@ export default DS.Model.extend({
   final_year_earnings_cents: DS.attr('number'),
   ss_currently_collecting: DS.attr('boolean'),
   roth_first: DS.attr('boolean'),
-  retirement_age: DS.attr('date'),
+  retirement_date: DS.attr('date'),
   created_at: DS.attr('date'),
   updated_at: DS.attr('date')
 });

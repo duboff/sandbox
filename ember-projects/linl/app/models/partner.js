@@ -10,7 +10,7 @@ export default DS.Model.extend({
   final_year_earnings_cents: DS.attr('number'),
   ss_currently_collecting: DS.attr('boolean'),
   roth_first: DS.attr('boolean'),
-  retirement_age: DS.attr('date'),
+  retirement_date: DS.attr('date'),
   created_at: DS.attr('date'),
   updated_at: DS.attr('date')
 });

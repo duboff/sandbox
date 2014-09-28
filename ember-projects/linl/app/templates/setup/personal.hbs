@@ -1,43 +1,45 @@
 <form>
-  <fieldset {{bind-attr class='partnerVisible:col-xs-6:col-xs12'}}>
+  <fieldset {{bind-attr class='user.partnerVisible:col-xs-6:col-xs12'}}>
     <legend>You</legend>
     <div>
       <label>Birthdate</label>
-      {{view Ember.TextField type='date' value=fields.birth_date}}
+      {{view Ember.TextField type='date' value=fields.user.birthdate}}
     </div>
     <div>
       <label>State</label>
-      {{view Ember.Select content=states 
-        optionValuePath="content.value" optionLabelPath="content.label" }}
+      {{view Ember.Select content=user.states 
+      optionValuePath="content.value" optionLabelPath="content.label"
+      value=fields.user.state}}
     </div>
     <div>
       <label>Current Yearly Earnings</label>
-      {{input type='currency' value=fields.current_earnings_cents placeholder=0}}
+      {{input type='currency' value=fields.user.current_earnings_cents placeholder=0}}
     </div>
     <div>
       <label>Spouse/Partner?</label>
-      {{view Ember.Select content=partner_statuses selection=partner_status}}
+      {{view Ember.Select content=user.partner_statuses selection=user.partner_status}}
     </div>
   </fieldset>
-  <fieldset {{bind-attr class='partnerVisible:col-xs-6:hidden'}}>
-    <legend>{{controller.partner_status}}</legend>
+  <fieldset {{bind-attr class='user.partnerVisible:col-xs-6:hidden'}}>
+    <legend>{{user.partner_status}}</legend>
     <div>
       <label>Name</label>
       {{input value=fields.partner.name}}
     </div>
     <div>
       <label>Birthdate</label>
-      {{view Ember.TextField type='date' value=fields.partner.birth_date}}
+      {{view Ember.TextField type='date' value=fields.partner.birthdate}}
     </div>
     <div>
       <label>State</label>
-      {{view Ember.Select content=states 
-        optionValuePath="content.value" optionLabelPath="content.label" }}
+      {{view Ember.Select content=user.states 
+      optionValuePath="content.value" optionLabelPath="content.label" 
+      value=fields.partner.state}}
     </div>
     <div>
       <label>Current Yearly Earnings</label>
       {{view Ember.TextField type='currency' value=fields.partner.current_earnings_cents placeholder=0}}
     </div>
   </fieldset>
-  <a href="#" {{action "saveChangesTransition"}} class="btn btn-success">Next</a>
+  <a href="#" {{action "setup.saveChangesTransition"}} class="btn btn-success">Next</a>
 </form>
