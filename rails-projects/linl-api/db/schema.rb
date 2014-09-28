@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140926213134) do
+ActiveRecord::Schema.define(version: 20140928215030) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -96,7 +96,6 @@ ActiveRecord::Schema.define(version: 20140926213134) do
     t.datetime "birthdate"
     t.string   "state"
     t.boolean  "ss_currently_collecting"
-    t.integer  "ss_monthly_benefits_cents", limit: 8
     t.integer  "current_earnings_cents",    limit: 8
     t.integer  "final_year_earnings_cents", limit: 8
     t.datetime "created_at"
