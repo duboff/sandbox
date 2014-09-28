@@ -4,6 +4,16 @@ module API
       include API::V1::Defaults
 
       resource :users do
+        helpers do
+          def user_params
+            ActionController::Parameters.new(params).require(:user).permit(
+              :email, :password, :password_confirmation, :first_name, :last_name,
+              :birthdate, :state, :ss_currently_collecting, :current_earnings_cents,
+              :final_year_earnings_cents, :roth_first, :retirement_date,
+              :marital_status, :created_at, :updated_at)
+          end
+
+        end
         desc "Return a user"
         params do
           requires :id, type: String, desc: "ID of the user"
@@ -14,37 +24,35 @@ module API
           if @user.partner 
             present :partner, [@user.partner], with: API::V1::Entities::PartnerEntity
           end
-          if @user.children
+          if !@user.children.empty?
             present :children, @user.children, with: API::V1::Entities::ChildEntity
           end
-          if @user.residences
+          if !@user.residences.empty?
             present :residences, @user.residences, with: API::V1::Entities::ResidenceEntity
           end
-          if @user.assets
+          if !@user.assets.empty?
             present :assets, @user.assets, with: API::V1::Entities::AssetEntity
           end
-          if @user.assumptions
+          if !@user.assumptions.empty?
             present :assumptions, @user.assumptions, with: API::V1::Entities::AssumptionEntity
           end
-          if @user.retirements
+          if !@user.retirements.empty?
             present :retirements, @user.retirements, with: API::V1::Entities::RetirementEntity
           end
         end
 
         desc "Create new user"
-        params do
-          #requires :email, type: String, desc: 'Email of the user'
-          #requires :password, type: String, desc: 'Password of the user'
-          #requires :password_confirmation, type: String, desc: 'Password Confirmation of the user'
-        end
         post "" do
-          puts 'booger'
-          emai = params[:user][:email]
-          pass = params[:user][:password]
-          pass_conf = params[:user][:password_confirmation]
-          User.create({email: emai, password: pass, password_confirmation: pass_conf})
+          User.create(user_params)
+        end
+
+        desc "Update user attributes"
+        put ':id' do
+          puts user_params
         end
       end
+
+      private
     end
   end
 end
