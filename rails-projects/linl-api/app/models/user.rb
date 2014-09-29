@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
 
   #validates :first_name, length: { maximum: 50 }, presence: true
   validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
-  validates_length_of :password, within: 8..30
+  #validates_length_of :password, within: 8..30
   has_one :partner, autosave:true, dependent: :destroy
   accepts_nested_attributes_for :partner
   has_many :children, autosave:true, dependent: :destroy
@@ -32,7 +32,6 @@ class User < ActiveRecord::Base
   accepts_nested_attributes_for :assumptions
   has_many :retirements, autosave:true, dependent: :destroy
   accepts_nested_attributes_for :retirements
-
 
   def ensure_authentication_token
     if authentication_token.blank?

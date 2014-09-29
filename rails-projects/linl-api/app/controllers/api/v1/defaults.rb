@@ -18,6 +18,7 @@ module API
           def logger
             Rails.logger
           end
+
         end
 
         rescue_from ActiveRecord::RecordNotFound do |e|

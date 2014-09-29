@@ -7,7 +7,7 @@ module API
         helpers do
           def user_params
             ActionController::Parameters.new(params).require(:user).permit(
-              :email, :password, :password_confirmation, :first_name, :last_name,
+              :id, :email, :password, :password_confirmation, :first_name, :last_name,
               :birthdate, :state, :ss_currently_collecting, :current_earnings_cents,
               :final_year_earnings_cents, :roth_first, :retirement_date,
               :marital_status, :created_at, :updated_at)
@@ -47,12 +47,20 @@ module API
         end
 
         desc "Update user attributes"
+        params do
+          requires :user, type: Hash do
+            requires :email, type: String
+            optional :first_name, :last_name,
+                :birthdate, :state, :ss_currently_collecting, :current_earnings_cents,
+                :final_year_earnings_cents, :roth_first, :retirement_date,
+                :marital_status, :created_at, :updated_at
+          end
+        end
         put ':id' do
-          puts user_params
+          User.find_by_email(params[:user][:email]).update(permitted_params[:user])
         end
       end
 
-      private
     end
   end
 end
