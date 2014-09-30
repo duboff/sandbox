@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  partner: DS.belongsTo('partner'),
+  partner_id: DS.belongsTo('partner'),
   children: DS.hasMany('child'),
   residences: DS.hasMany('residence'),
   assets: DS.hasMany('asset'),

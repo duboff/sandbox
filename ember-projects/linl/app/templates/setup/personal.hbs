@@ -7,9 +7,7 @@
     </div>
     <div>
       <label>State</label>
-      {{view Ember.Select content=user.states 
-      optionValuePath="content.value" optionLabelPath="content.label"
-      value=fields.user.state}}
+      {{view Ember.Select content=user.states value=fields.user.state}}
     </div>
     <div>
       <label>Current Yearly Earnings</label>
@@ -32,14 +30,12 @@
     </div>
     <div>
       <label>State</label>
-      {{view Ember.Select content=user.states 
-      optionValuePath="content.value" optionLabelPath="content.label" 
-      value=fields.partner.state}}
+      {{view Ember.Select content=user.states value=fields.partner.state}}
     </div>
     <div>
       <label>Current Yearly Earnings</label>
       {{view Ember.TextField type='currency' value=fields.partner.current_earnings_cents placeholder=0}}
     </div>
   </fieldset>
-  <a href="#" {{action "setup.saveChangesTransition"}} class="btn btn-success">Next</a>
+  <a href="#" {{action "saveChangesTransition"}} class="btn btn-success">Next</a>
 </form>

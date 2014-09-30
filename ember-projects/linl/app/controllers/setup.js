@@ -3,12 +3,11 @@ import Ember from 'ember';
 export default Ember.ObjectController.extend({
   actions: {
     saveChanges: function() {
-      console.log(this.get('fields'));
-      this.get('model').save();
+      var user_fields = this.get('fields').get('user');
+      this.get('model').update(user_fields);
     },
     saveChangesTransition: function() {
       var _this = this;
-      console.log(this.get('fields'));
       var curPath = this.get('curPath');
       var paths = this.get('formPath')(curPath);
       this.set('curPath', paths.next);
