@@ -2,21 +2,12 @@ module API
   module V1
     class Users < Grape::API
       include API::V1::Defaults
+      helpers SharedParams
 
       resource :users do
-        helpers do
-          def user_params
-            ActionController::Parameters.new(params).require(:user).permit(
-              :id, :email, :password, :password_confirmation, :first_name, :last_name,
-              :birthdate, :state, :ss_currently_collecting, :current_earnings_cents,
-              :final_year_earnings_cents, :roth_first, :retirement_date,
-              :marital_status, :created_at, :updated_at)
-          end
-
-        end
         desc "Return a user"
         params do
-          requires :id, type: String, desc: "ID of the user"
+          use :find_user
         end
         get ":id", root: "user" do
           @user = User.where(id: permitted_params[:id]).first!
@@ -42,25 +33,23 @@ module API
         end
 
         desc "Create new user"
+        params do
+          use :create_user
+        end
         post "" do
-          User.create(user_params)
+          User.create(permitted_params[:user])
         end
 
         desc "Update user attributes"
         params do
-          requires :user, type: Hash do
-            requires :email, type: String
-            optional :first_name, :last_name,
-                :birthdate, :state, :ss_currently_collecting, :current_earnings_cents,
-                :final_year_earnings_cents, :roth_first, :retirement_date,
-                :marital_status, :created_at, :updated_at
-          end
+          use :user, :partner
         end
         put ':id' do
-          User.find_by_email(params[:user][:email]).update(permitted_params[:user])
+          puts 'booger'
+          user = User.find_by_email(permitted_params[:user][:email])
+          user.update(permitted_params[:user])
         end
       end
-
     end
   end
 end
