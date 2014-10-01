@@ -7,15 +7,50 @@ module API
         requires :user, type: Hash do
           requires :email, type: String
 
-          optional :first_name, :last_name, :password, :password_confirmation,
-              :birthdate, :state, :ss_currently_collecting, :current_earnings_cents,
-              :final_year_earnings_cents, :roth_first, :retirement_date,
-              :marital_status, :created_at, :updated_at
+          #user params
+          optional :first_name, type: String, desc: 'User first name'
+          optional :last_name, type: String, desc: 'User last name'
+          optional :password, type: String, desc: 'User password'
+          optional :password_confirmation, type: String, desc: 'User password confirmation'
+          optional :birthdate, type: Date, desc: 'User birthdate'
+          optional :state, type: String, desc: 'User state' 
+          optional :ss_currently_collecting, type: Boolean, desc: 'Whether user is currently collecting social security benefits' 
+          optional :current_earnings_cents, type: Integer, desc: "User's current earnings per year"
+          optional :final_year_earnings_cents, type: Integer, desc: "User's earnings the year before retirement"
+          optional :roth_first, type: Boolean, desc: "True = User will withdraw from Roth-IRA first, False reverses the order"
+          optional :retirement_date, type: Date, desc: "Date user will retire"
+          optional :marital_status, type: Boolean, desc: "True = user is married, False means user is not married"
+          optional :created_at, type: Date, desc: 'Time user record was created'
+          optional :updated_at, type: Date, desc: 'Time user record was last updated'
 
           optional :partner, type: Hash do
-            optional :name, :birthdate, :state, :ss_currently_collecting,
-              :current_earnings_cents, :final_year_earnings_cents, :roth_first,
-              :retirement_date, :created_at, :updated_at
+            optional :name, type: String, allow_blank: false, desc: 'Partner Name'
+            optional :birthdate, type: Date, desc: 'Partner birthdate'
+            optional :state, type: String, desc: 'Partner state' 
+            optional :ss_currently_collecting, type: Boolean, desc: 'Whether partner is currently collecting social security benefits' 
+            optional :current_earnings_cents, type: Integer, desc: "Partner's current earnings per year"
+            optional :final_year_earnings_cents, type: Integer, desc: "Partner's earnings the year before retirement"
+            optional :roth_first, type: Boolean, desc: "True = Partner will withdraw from Roth-IRA first, False reverses the order"
+            optional :retirement_date, type: Date, desc: "Date partner will retire"
+            optional :created_at, type: Date, desc: 'Time partner record was created'
+            optional :updated_at, type: Date, desc: 'Time partner record was last updated'
+          end
+
+          optional :residences, type: Array do
+            optional :name, type: String, allow_blank: false, desc: 'Residence Name'
+            optional :monthly_payment_cents, type: Integer, desc: "Monthly payment for residence"
+            optional :current_value_cents, type: Integer, desc: "Current value of residence"
+            optional :mortgage_balance_cents, type: Integer, desc: "Remaining mortgage on residence"
+            optional :years_remaining, type: Integer, desc: "Years remaining on residence's mortgage"
+            optional :misc_annual_expenses_cents, type: Integer, desc: "Any additional yearly expenses not accounted for in inputs"
+            #TODO is it utilities per month or annually?
+            optional :utilities_cents, type: Integer, desc: "Utilities annually"
+            optional :annual_property_tax_cents, type: Integer, desc: "Annual property tax"
+            #TODO is it insurance amount or cost?
+            optional :annual_insurance_cents, type: Integer, desc: "Annual Insurance amount"
+            optional :owned, type: Boolean, desc: "True = user owns residence, False = user does not own residence"
+            optional :created_at, type: Date, desc: 'Time residence record was created'
+            optional :updated_at, type: Date, desc: 'Time residence record was last updated'
           end
         end
       end

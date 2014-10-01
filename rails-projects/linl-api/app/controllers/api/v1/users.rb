@@ -41,12 +41,16 @@ module API
         end
 
         desc "Update user attributes"
+=begin
         params do
           use :user
         end
+=end
         put ':id' do
+          puts params.inspect
           #TODO this should be the setup method(as part of the URL)
-          nested_models = [:partner, :children, :assets, :assumptions, :retirements]
+=begin
+          nested_models = [:partner, :residences, :children, :assets, :assumptions, :retirements]
           params = permitted_params[:user]
           nested_models.each do |key|
             if !params[key] || params[key].empty?
@@ -57,6 +61,7 @@ module API
           end
           user = User.find_by_email(params[:email])
           user.update(params)
+=end
         end
       end
     end
