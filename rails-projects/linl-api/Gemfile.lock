@@ -324,7 +324,7 @@ DEPENDENCIES
   grape-swagger-rails
   jquery-rails
   meta_request
-  pg
+  pg (~> 0.17)
   poltergeist
   pry-nav
   pry-rails

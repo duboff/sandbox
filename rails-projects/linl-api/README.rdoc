@@ -6,23 +6,23 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+ ruby 2.1.3p242, rails 4.1, pg 0.17 
 
-* System dependencies
-
-* Configuration
+to install rails/ruby I would suggest following [michael hartl's tutorial](
+https://www.railstutorial.org/book/beginning#sec-up_and_running)
 
 * Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+used homebrew/lunchy/pg for postgres install
+[tutorial used](http://www.moncefbelyamani.com/how-to-install-postgresql-on-a-mac-with-homebrew-and-lunchy/)
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+to get everything up and running
+  bundle
+  rake db:create
+  rake db:migrate
+  rails s
+
+to confirm everything is working, go to
+[http://localhost:3000/api/v1/users/11](http://localhost:3000/api/v1/users/11)
+this should provide a JSON response of the generated data for the admin user
+
