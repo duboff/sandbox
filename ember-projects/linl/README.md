@@ -2,14 +2,13 @@
 
 This README outlines the details of collaborating on this Ember application.
 
-A short introduction of this app could easily go here.
-
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM) and [Bower](http://bower.io/)
+* I would use [this](http://www.wenincode.com/installing-node-jsnpm-without-sudo/) to install node
 
 ## Installation
 
@@ -17,6 +16,7 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
+* `ember g ember-cli-simple-auth-devise`
 
 ## Running / Development
 
@@ -37,9 +37,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
