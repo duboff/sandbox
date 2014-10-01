@@ -1,3 +1,5 @@
+require 'grape'
+
 module API
   module V1
     module SharedParams
@@ -7,6 +9,8 @@ module API
         requires :user, type: Hash do
           requires :email, type: String
 
+          Boolean = Virtus::Attribute::Boolean
+          
           #user params
           optional :first_name, type: String, desc: 'User first name'
           optional :last_name, type: String, desc: 'User last name'
@@ -24,7 +28,7 @@ module API
           optional :updated_at, type: Date, desc: 'Time user record was last updated'
 
           optional :partner, type: Hash do
-            optional :name, type: String, allow_blank: false, desc: 'Partner Name'
+            optional :name, type: String,  desc: 'Partner Name'
             optional :birthdate, type: Date, desc: 'Partner birthdate'
             optional :state, type: String, desc: 'Partner state' 
             optional :ss_currently_collecting, type: Boolean, desc: 'Whether partner is currently collecting social security benefits' 
@@ -37,7 +41,7 @@ module API
           end
 
           optional :residences, type: Array do
-            optional :name, type: String, allow_blank: false, desc: 'Residence Name'
+            optional :name, type: String,  desc: 'Residence Name'
             optional :monthly_payment_cents, type: Integer, desc: "Monthly payment for residence"
             optional :current_value_cents, type: Integer, desc: "Current value of residence"
             optional :mortgage_balance_cents, type: Integer, desc: "Remaining mortgage on residence"
