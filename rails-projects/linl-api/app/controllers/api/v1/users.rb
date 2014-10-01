@@ -42,12 +42,21 @@ module API
 
         desc "Update user attributes"
         params do
-          use :user, :partner
+          use :user
         end
         put ':id' do
-          puts 'booger'
-          user = User.find_by_email(permitted_params[:user][:email])
-          user.update(permitted_params[:user])
+          #TODO this should be the setup method(as part of the URL)
+          nested_models = [:partner, :children, :assets, :assumptions, :retirements]
+          params = permitted_params[:user]
+          nested_models.each do |key|
+            if !params[key] || params[key].empty?
+              params.delete key
+            else
+              params[(key.to_s + '_attributes').to_sym] = params.delete key
+            end
+          end
+          user = User.find_by_email(params[:email])
+          user.update(params)
         end
       end
     end
