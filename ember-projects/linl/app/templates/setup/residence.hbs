@@ -52,8 +52,8 @@
         <label>Misc. Annual Expenses</label>
         {{input type='currency' value=fields.residence.misc_annual_expenses_cents}}
       </div>
-      <a href="#" {{action "saveChanges"}} class="btn btn-success">Add Residence</a>
+      <a href="#" {{action "saveChanges" model fields curRoute target=residence }} class="btn btn-success">Add Residence</a>
     </fieldset>
-    <a href="#" {{action "saveChangesTransition"}} class="btn btn-success">Next</a>
+    <a href="#" {{action "saveChanges" model fields nextRoute target=residence}} class="btn btn-success">Next</a>
   </fieldset>
 </form>
