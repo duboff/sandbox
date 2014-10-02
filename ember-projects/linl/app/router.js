@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 var Router = Ember.Router.extend({
-  location: LinlENV.locationType
+  location: 'auto'
 });
 
 Router.map(function() {

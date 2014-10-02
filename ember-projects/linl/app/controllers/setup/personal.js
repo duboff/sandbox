@@ -12,20 +12,21 @@ export default Ember.Controller.extend({
       var _this = this;
       var fields = this.get('fields');
       var model = this.get('model');
-      fields.user.id = model.id;
-      var user_fields = fields.user;
-      console.log(fields);
-      model.update(fields);
-      model.save();
-  /*    var curPath = this.get('curPath');
-      var paths = this.get('formPath')(curPath);
-      this.set('curPath', paths.next);
-      var nextPath = paths.next !== '' ? 'setup.'+paths.next : 'user';
-      _this.transitionToRoute(nextPath);
-      this.get('model').save().then(function() {
-        //_this.transitionToRoute('setup.' + paths.next);
+      var partner = model.get('partner');
+      if ( fields.partner.name ) {
+        if (!partner) {
+          fields.partner.user = model;
+          partner = this.store.createRecord('partner', fields.partner);
+        } else {
+          partner.setProperties(fields.partner);
+          fields.user.partner = partner;
+        }
+      }
+
+      model.setProperties(fields.user);
+      model.save().then(function() {
+        _this.transitionToRoute('setup.residence');
       });
-      */
     }
   },
 

@@ -2,10 +2,6 @@ import Ember from 'ember';
 
 export default Ember.ObjectController.extend({
   actions: {
-    saveChanges: function() {
-      var user_fields = this.get('fields').get('user');
-      this.get('model').update(user_fields);
-    },
     saveChangesTransition: function() {
       var _this = this;
       var curPath = this.get('curPath');

@@ -1,3 +1,5 @@
+require 'ap'
+
 module API
   module V1
     class Users < Grape::API
@@ -41,15 +43,12 @@ module API
         end
 
         desc "Update user attributes"
-=begin
         params do
           use :user
         end
-=end
         put ':id' do
           puts params.inspect
           #TODO this should be the setup method(as part of the URL)
-=begin
           nested_models = [:partner, :residences, :children, :assets, :assumptions, :retirements]
           params = permitted_params[:user]
           nested_models.each do |key|
@@ -59,9 +58,9 @@ module API
               params[(key.to_s + '_attributes').to_sym] = params.delete key
             end
           end
+
           user = User.find_by_email(params[:email])
           user.update(params)
-=end
         end
       end
     end
