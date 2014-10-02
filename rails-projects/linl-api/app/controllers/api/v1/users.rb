@@ -6,6 +6,22 @@ module API
       include API::V1::Defaults
       helpers SharedParams
 
+      #TODO refactor
+      desc "Handles user subModel udpates"
+      namespace 'users/:user_id' do
+        resource :residences do
+          get "" do
+            residences = User.find(params[:user_id]).residences
+            present :residences, residences, with: API::V1::Entities::ResidenceEntity
+          end
+
+          get ":resource_id" do
+            residence = User.find(params[:user_id]).residences.find(params[:resource_id])
+            present :residence, residence, with: API::V1::Entities::ResidenceEntity
+          end
+        end
+      end
+
       resource :users do
         desc "Return a user"
         params do
@@ -47,7 +63,6 @@ module API
           use :user
         end
         put ':id' do
-          puts params.inspect
           #TODO this should be the setup method(as part of the URL)
           nested_models = [:partner, :residences, :children, :assets, :assumptions, :retirements]
           params = permitted_params[:user]

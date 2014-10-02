@@ -28,6 +28,7 @@ module API
           optional :updated_at, type: Date, desc: 'Time user record was last updated'
 
           optional :partner, type: Hash do
+            optional :id, type: Integer, desc: 'Id of partner'
             optional :name, type: String,  desc: 'Partner Name'
             optional :birthdate, type: Date, desc: 'Partner birthdate'
             optional :state, type: String, desc: 'Partner state' 
@@ -41,6 +42,7 @@ module API
           end
 
           optional :residences, type: Array do
+            optional :id, type: Integer, desc: 'Id of residence'
             optional :name, type: String,  desc: 'Residence Name'
             optional :monthly_payment_cents, type: Integer, desc: "Monthly payment for residence"
             optional :current_value_cents, type: Integer, desc: "Current value of residence"
@@ -64,6 +66,23 @@ module API
           requires :email, type: String
           requires :password, type: String
           requires :password_confirmation, type: String
+        end
+      end
+      params :create_residence do
+        requires :residence, type: Hash do
+          optional :user, type: Integer, desc: 'Id of parent user'
+          requires :name, type: String,  desc: 'Residence Name'
+          optional :monthly_payment_cents, type: Integer, desc: "Monthly payment for residence"
+          optional :current_value_cents, type: Integer, desc: "Current value of residence"
+          optional :mortgage_balance_cents, type: Integer, desc: "Remaining mortgage on residence"
+          optional :years_remaining, type: Integer, desc: "Years remaining on residence's mortgage"
+          optional :misc_annual_expenses_cents, type: Integer, desc: "Any additional yearly expenses not accounted for in inputs"
+          #TODO is it utilities per month or annually?
+          optional :utilities_cents, type: Integer, desc: "Utilities annually"
+          optional :annual_property_tax_cents, type: Integer, desc: "Annual property tax"
+          #TODO is it insurance amount or cost?
+          optional :annual_insurance_cents, type: Integer, desc: "Annual Insurance amount"
+          optional :owned, type: Boolean, desc: "True = user owns residence, False = user does not own residence"
         end
       end
 

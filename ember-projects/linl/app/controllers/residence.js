@@ -4,7 +4,7 @@ export default Ember.ObjectController.extend({
 
   actions: {
     saveChanges: function(user, fields, nextRoute) {
-      var _this = this
+      var _this = this;
       if ( fields.residence.name ) {
         var residences = user.get('residences');
 

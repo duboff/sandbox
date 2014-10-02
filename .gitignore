@@ -8,6 +8,7 @@
 /ember-projects/*/node_modules
 /ember-projects/*/vendor/*
 /ember-projects/*/dist/assets/vendor*
+/ember-projects/*/dist/assets/linl*
 
 # ember misc
 /ember-projects/*/.sass-cache
